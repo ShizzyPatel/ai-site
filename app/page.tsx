@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Section from "./components/Section";
 import Button from "./components/Button";
 import FeatureGrid from "./components/FeatureGrid";
@@ -6,28 +8,51 @@ import Split from "./components/Split";
 export default function Home() {
   return (
     <main>
-      {/* HERO */}
-      <Section className="py-28">
-        <div className="max-w-2xl">
-          <p className="text-sm font-medium text-gray-500 tracking-wide">
-            Preview
-          </p>
+      {/* HERO (image background, text left) */}
+      <section className="relative overflow-hidden bg-white">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero/hero-image.png"
+            alt="Abstract AI network background"
+            fill
+            priority
+            className="object-cover"
+          />
+          {/* Left-side readability overlay (stronger on left, lighter to right) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/30" />
+          {/* Optional subtle overall softening */}
+          <div className="absolute inset-0 backdrop-blur-[2px]" />
+        </div>
 
-          <h1 className="mt-6 text-6xl font-semibold leading-tight tracking-tight">
-            Clean, modern AI website
-          </h1>
+        {/* Foreground content */}
+        <div className="relative mx-auto max-w-6xl px-6 py-28">
+          <div className="max-w-2xl">
+            <p className="text-sm font-medium text-gray-500 tracking-wide">
+              Preview
+            </p>
 
-          <p className="mt-7 text-lg leading-relaxed text-gray-600">
-            Placeholder copy — your final messaging will come from the deck.
-            We’re building the structure, rhythm, and module system now.
-          </p>
+            <h1 className="mt-6 text-6xl font-semibold leading-tight tracking-tight text-gray-900">
+              Clean, modern AI website
+            </h1>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button>Primary CTA</Button>
-            <Button variant="secondary">Secondary</Button>
+            <p className="mt-7 text-lg leading-relaxed text-gray-600">
+              Placeholder copy — your final messaging will come from the deck.
+              We’re building the structure, rhythm, module system, and motion now.
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button>Primary CTA</Button>
+              <Button variant="secondary">Secondary</Button>
+            </div>
+
+            {/* Small supporting line (optional) */}
+            <p className="mt-8 text-sm text-gray-500">
+              Built for long-term clarity: typography-first, restrained motion, and a flexible component system.
+            </p>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* PLATFORM / FEATURES */}
       <Section tone="tint" className="py-20" id="platform">
@@ -75,7 +100,7 @@ export default function Home() {
       <Section tone="tint" className="py-20" id="about">
         <div className="max-w-3xl">
           <p className="text-sm font-medium text-gray-500">About</p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight">
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-gray-900">
             Clean structure now, content later
           </h2>
           <p className="mt-4 text-gray-600 leading-relaxed">
@@ -88,9 +113,9 @@ export default function Home() {
 
       {/* CONTACT / CTA */}
       <Section className="py-24" id="contact">
-        <div className="rounded-3xl border border-gray-100 bg-white p-10">
+        <div className="rounded-3xl border border-gray-100 bg-white p-10 shadow-[var(--shadow-sm)]">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="text-3xl font-semibold tracking-tight text-gray-900">
               Ready for the next step?
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
