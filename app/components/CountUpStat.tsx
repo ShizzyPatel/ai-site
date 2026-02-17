@@ -1,84 +1,82 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import * as React from "react";
+import { motion, useMotionValue, animate, useInView } from "framer-motion";
 
-type CountUpStatProps = {
-  value: number;              // numeric value to count to (e.g. 86000)
-  label: string;              // "Knowledge Nodes"
-  prefix?: string;            // e.g. "<"
-  suffix?: string;            // e.g. "+", "s"
-  durationMs?: number;        // default 900
-  format?: (n: number) => string; // optional formatter
+type FormatType = "int" | "k-int"; // add more later if needed
+
+type Props = {
+  label: string;
+
+  // If provided => count-up animation
+  value?: number;
+
+  // If provided => no animation, render exactly this text (e.g. "24/7")
+  text?: string;
+
+  // Optional cosmetics for the animated number
+  prefix?: string;
+  suffix?: string;
+
+  // Formatting for animated values (done INSIDE client component)
+  format?: FormatType;
+
+  // Timing
+  duration?: number;
 };
 
+function formatNumber(n: number, format: FormatType) {
+  if (format === "k-int") return `${Math.round(n / 1000)}K`;
+  return `${Math.round(n)}`; // "int"
+}
+
 export default function CountUpStat({
-  value,
   label,
-  prefix = "",
-  suffix = "",
-  durationMs = 900,
-  format,
-}: CountUpStatProps) {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [started, setStarted] = useState(false);
-  const [current, setCurrent] = useState(0);
+  value,
+  text,
+  prefix,
+  suffix,
+  format = "int",
+  duration = 0.9,
+}: Props) {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-10% 0px" });
 
-  const formatter = useMemo(() => {
-    if (format) return format;
-    // default: add commas for big numbers
-    return (n: number) => n.toLocaleString();
-  }, [format]);
+  // If static text is provided, we never animate.
+  const isStatic = typeof text === "string";
 
-  useEffect(() => {
-    if (!ref.current) return;
+  const mv = useMotionValue(0);
+  const [display, setDisplay] = React.useState("0");
 
-    const el = ref.current;
+  React.useEffect(() => {
+    if (isStatic) return;
+    if (!inView) return;
+    if (typeof value !== "number") return;
 
-    const io = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          setStarted(true);
-          io.disconnect(); // run once
-        }
+    const controls = animate(mv, value, {
+      duration,
+      ease: "easeOut",
+      onUpdate: (latest) => {
+        // IMPORTANT: round + format here so you never show decimals.
+        setDisplay(formatNumber(latest, format));
       },
-      { threshold: 0.35 }
-    );
+    });
 
-    io.observe(el);
-    return () => io.disconnect();
-  }, []);
+    return () => controls.stop();
+  }, [inView, isStatic, value, duration, format, mv]);
 
-  useEffect(() => {
-    if (!started) return;
-
-    let raf = 0;
-    const start = performance.now();
-    const from = 0;
-    const to = value;
-
-    const tick = (now: number) => {
-      const t = Math.min(1, (now - start) / durationMs);
-      // easeOutCubic
-      const eased = 1 - Math.pow(1 - t, 3);
-      const next = Math.round(from + (to - from) * eased);
-      setCurrent(next);
-
-      if (t < 1) raf = requestAnimationFrame(tick);
-    };
-
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [started, value, durationMs]);
+  const numberText = isStatic ? text! : display;
 
   return (
-    <div ref={ref} className="min-w-[120px]">
-      <div className="text-[rgb(var(--primary2))] text-xl font-semibold tracking-tight">
-        {prefix}
-        {formatter(current)}
-        {suffix}
+    <div ref={ref} className="min-w-0">
+      <div className="text-[22px] md:text-[24px] font-semibold tracking-tight text-[rgb(var(--primary2))]">
+        {prefix ?? ""}
+        {/* Keeps typography identical whether static or animated */}
+        <motion.span>{numberText}</motion.span>
+        {suffix ?? ""}
       </div>
-      <div className="mt-1 text-xs uppercase tracking-[0.2em] text-[rgb(var(--muted))]">
+
+      <div className="mt-2 text-[11px] tracking-[0.35em] uppercase text-[rgb(var(--muted))]">
         {label}
       </div>
     </div>
