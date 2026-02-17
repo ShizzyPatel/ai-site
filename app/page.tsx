@@ -4,6 +4,8 @@ import Section from "./components/Section";
 import Container from "./components/Container";
 import Button from "./components/Button";
 import OnView from "./components/OnView";
+import CountUpStat from "./components/CountUpStat";
+
 
 const STATS = [
   { value: "15+", label: "AI Providers" },
@@ -38,9 +40,10 @@ export default function Home() {
         <Container className="relative z-10 py-24 md:py-28">
           <OnView>
             {/* Kicker */}
-            <p className="font-mono text-xs tracking-[0.35em] uppercase text-[rgb(var(--primary2))]">
-              AI UNITE
+            <p className="text-xs tracking-[0.35em] uppercase text-[rgb(var(--muted))]">
+              Cognitive <span className="gradient-text">Intelligence</span> Layer for the AI Economy
             </p>
+
 
             {/* Headline */}
             <h1 className="font-display mt-6 text-5xl md:text-7xl leading-[1.03] tracking-tight text-[rgb(var(--text))] max-w-5xl">
@@ -66,21 +69,12 @@ export default function Home() {
             </div>
 
             {/* Stats row */}
-            <div className="mt-12 border-t border-white/10 pt-8">
-              <div className="grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
-                {STATS.map((s, i) => (
-                  <OnView key={s.label} delay={i * 0.08}>
-                    <div>
-                      <div className="font-mono text-xl text-[rgb(var(--primary2))]">
-                        {s.value}
-                      </div>
-                      <div className="mt-2 text-xs tracking-[0.14em] uppercase text-white/50">
-                        {s.label}
-                      </div>
-                    </div>
-                  </OnView>
-                ))}
-              </div>
+            <div className="mt-10 grid grid-cols-2 gap-y-8 gap-x-10 sm:grid-cols-5 border-t border-[rgb(var(--border))] pt-8">
+              <CountUpStat value={15} label="AI Providers" suffix="+" format={(n) => n.toString()} />
+              <CountUpStat value={86000} label="Knowledge Nodes" suffix="+" format={(n) => `${Math.round(n / 1000)}K`} />
+              <CountUpStat value={8} label="Patents Filed" format={(n) => n.toString()} />
+              <CountUpStat value={5} label="Response Time" prefix="<" suffix="s" format={(n) => n.toString()} />
+              <CountUpStat value={24} label="Autonomous Learning" suffix="/7" format={(n) => n.toString()} />
             </div>
           </OnView>
         </Container>

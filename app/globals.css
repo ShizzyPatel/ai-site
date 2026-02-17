@@ -29,6 +29,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.gradient-text {
+  background: linear-gradient(90deg, rgb(var(--primary)), rgb(var(--primary2)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
 body {
   font-family: var(--font-sans);
   background: rgb(var(--bg));
