@@ -10,11 +10,12 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition";
+    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-[rgb(var(--primary))]/60";
+
   const styles =
     variant === "primary"
-      ? "bg-gray-900 text-white hover:opacity-90"
-      : "border border-gray-200 text-gray-900 hover:bg-gray-50";
+      ? "bg-[rgb(var(--primary))] text-white hover:bg-[rgb(var(--primary2))] shadow-[var(--shadow-sm)]"
+      : "border border-[rgb(var(--border))] bg-transparent text-[rgb(var(--text))] hover:bg-white/5";
 
   return <button className={`${base} ${styles} ${className}`}>{children}</button>;
 }

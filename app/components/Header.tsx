@@ -1,21 +1,43 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Container from "./Container";
+import Button from "./Button";
 
 export default function Header() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between">
-        <div className="text-sm font-semibold tracking-tight">ClientName</div>
+  const [scrolled, setScrolled] = useState(false);
 
-        <nav className="hidden items-center gap-6 text-sm text-gray-600 md:flex">
-          <a className="hover:text-gray-900" href="#platform">Platform</a>
-          <a className="hover:text-gray-900" href="#use-cases">Use cases</a>
-          <a className="hover:text-gray-900" href="#about">About</a>
-          <a className="hover:text-gray-900" href="#contact">Contact</a>
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={[
+        "sticky top-0 z-50 transition",
+        scrolled
+          ? "border-b border-[rgb(var(--border))] bg-[rgb(var(--bg))]/80 backdrop-blur-[12px]"
+          : "bg-transparent",
+      ].join(" ")}
+    >
+      <Container className="flex h-16 items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="h-8 w-8 rounded-xl bg-white/10" />
+          <span className="text-sm font-semibold tracking-tight">AI UNITE</span>
+        </div>
+
+        <nav className="hidden items-center gap-6 text-sm text-[rgb(var(--muted))] md:flex">
+          <a className="hover:text-white" href="#problem">Problem</a>
+          <a className="hover:text-white" href="#vision">Vision</a>
+          <a className="hover:text-white" href="#layers">Layers</a>
+          <a className="hover:text-white" href="#compare">Compare</a>
+          <a className="hover:text-white" href="#contact">Contact</a>
         </nav>
 
-        <button className="rounded-full bg-gray-900 px-4 py-2 text-xs font-medium text-white">
-          Request demo
-        </button>
+        <Button className="px-5 py-2 text-xs">Request Demo</Button>
       </Container>
     </header>
   );

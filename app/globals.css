@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Neutrals (cool gray, clean) */
-  --bg: 255 255 255;
-  --tint: 247 248 250;
-  --text: 17 24 39;
-  --muted: 75 85 99;
-  --border: 229 231 235;
+  /* Deck base */
+  --bg: 7 9 15;        /* #07090F */
+  --card: 13 17 23;    /* #0D1117 */
+  --text: 226 232 240; /* slate-200-ish */
+  --muted: 148 163 184;/* slate-400-ish */
+  --border: 30 41 59;  /* slate-800-ish */
 
-  /* Accent placeholder (we can swap later) */
-  --accent: 17 24 39; /* default = near-black */
+  /* Accent */
+  --primary: 59 130 246; /* #3B82F6 */
+  --primary2: 96 165 250;/* #60A5FA */
 
-  /* Radius + shadow */
+  /* Optional accents (later) */
+  --gold: 245 158 11;
+  --green: 34 197 94;
+  --purple: 168 85 247;
+
+  /* Radius + shadows */
   --r-lg: 24px;
   --r-md: 16px;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md: 0 12px 30px rgba(0,0,0,0.06);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
+  --shadow-md: 0 18px 50px rgba(0,0,0,0.35);
 }
 
 @theme inline {
@@ -37,7 +44,7 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
 }

@@ -2,7 +2,7 @@ import type { HTMLAttributes, PropsWithChildren } from "react";
 import Container from "./Container";
 
 type SectionProps = PropsWithChildren<{
-  tone?: "white" | "tint";
+  tone?: "bg" | "tint";
   className?: string;
   containerClassName?: string;
 }> &
@@ -10,12 +10,12 @@ type SectionProps = PropsWithChildren<{
 
 export default function Section({
   children,
-  tone = "white",
+  tone = "bg",
   className = "",
   containerClassName = "",
   ...rest
 }: SectionProps) {
-  const bg = tone === "tint" ? "bg-gray-50" : "bg-white";
+  const bg = tone === "tint" ? "bg-[rgb(var(--card))]" : "bg-[rgb(var(--bg))]";
 
   return (
     <section className={`${bg} ${className}`} {...rest}>
