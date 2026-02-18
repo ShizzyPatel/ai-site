@@ -40,9 +40,8 @@ export default function Hero() {
                     <h1 className="font-display mt-6 text-5xl md:text-7xl leading-[1.03] tracking-tight text-[rgb(var(--text))] max-w-5xl">
                         The{" "}
                         <span className="bg-gradient-to-r from-[rgb(var(--primary))] to-[rgb(var(--primary2))] bg-clip-text text-transparent">
-                            Intelligence
+                        Cognitive Intelligence Layer
                         </span>{" "}
-                        Infrastructure
                         <br />
                         for the AI Economy
                     </h1>
