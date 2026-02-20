@@ -71,7 +71,7 @@ const item = {
 
 export default function LayersSection() {
   return (
-    <Section tone="s5" className="py-24">
+    <Section className="py-24">
       <div className="mx-auto max-w-6xl">
         {/* Optional small label if you want consistency with other sections */}
         <div className="mb-8">

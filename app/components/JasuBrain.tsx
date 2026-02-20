@@ -208,7 +208,7 @@ export default function JasuBrainSection() {
   }, [active, layers]);
 
   return (
-    <Section tone="s7" className="py-24">
+    <Section className="py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
 

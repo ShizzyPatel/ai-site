@@ -172,7 +172,7 @@ export default function EmergenceEngineSection() {
     }, [activeIndex]);
 
     return (
-        <Section tone="s8" className="py-24">
+        <Section className="py-24">
             <div className="mx-auto max-w-6xl">
                 <div className="mb-10">
                     <h2 className="mt-4 font-display text-6xl leading-[1.02] tracking-tight text-[rgb(var(--text))]">
