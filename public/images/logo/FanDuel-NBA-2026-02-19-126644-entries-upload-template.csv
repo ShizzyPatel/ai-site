@@ -1,0 +1,253 @@
+entry_id,contest_id,contest_name,entry_fee,PG,PG,SG,SG,SF,SF,PF,PF,C,"","Instructions"
+"3663754691","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","","1) Edit your lineup by inserting any player from this list into their appropriate position columns"
+"3663754692","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","","2) You can paste either the Player ID + Name OR ID from their respective columns"
+"3663754693","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","","3) Any information to the right of the last position column will be ignored in the upload. Don't leave blank rows. Any entries after a blank row will not be edited"
+"3663754694","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","","4) You can not use this form to create new entries"
+"3663754695","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","",""
+"3663754696","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",Player ID + Player Name,Id,Position,First Name,Nickname,Last Name,FPPG,Played,Salary,Game,Team,Opponent,Injury Indicator,Injury Details,Tier,,,Roster Position
+"3663754697","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-188414:Victor Wembanyama,126644-188414,C/PF,Victor,Victor Wembanyama,Wembanyama,49.98999938964844,40,11600,PHO@SA,SA,PHO,,,,,,PF/C
+"3663754698","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-157833:Jalen Johnson,126644-157833,PF/SF,Jalen,Jalen Johnson,Johnson,50.337998046875,50,11500,ATL@PHI,ATL,PHI,,,,,,SF/PF
+"3663754699","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-157808:Cade Cunningham,126644-157808,PG,Cade,Cade Cunningham,Cunningham,49.744680851063826,47,10900,DET@NY,DET,NY,,,,,,PG
+"3663754700","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-145331:Tyrese Maxey,126644-145331,PG,Tyrese,Tyrese Maxey,Maxey,49.71346341646635,52,10100,ATL@PHI,PHI,ATL,,,,,,PG
+"3663754702","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-49111:Joel Embiid,126644-49111,C,Joel,Joel Embiid,Embiid,43.70645240045363,31,10000,ATL@PHI,PHI,ATL,O,Lower leg,,,,C
+"3663754704","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-66113:Donovan Mitchell,126644-66113,SG/PG,Donovan,Donovan Mitchell,Mitchell,45.66274605545343,51,9900,BKN@CLE,CLE,BKN,,,,,,PG/SG
+"3663754705","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-157908:Alperen Sengun,126644-157908,C/PF,Alperen,Alperen Sengun,Sengun,45.345650050951086,46,9800,HOU@CHA,HOU,CHA,,,,,,PF/C
+"3663754706","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-157822:Scottie Barnes,126644-157822,PF/SF,Scottie,Scottie Barnes,Barnes,43.838889793113424,54,9700,TOR@CHI,TOR,CHI,,,,,,SF/PF
+"3663754707","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-9644:James Harden,126644-9644,PG/SG,James,James Harden,Harden,44.39574675864362,47,9200,BKN@CLE,CLE,BKN,,,,,,PG/SG
+"3663754708","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-84690:Jalen Brunson,126644-84690,PG,Jalen,Jalen Brunson,Brunson,40.4139990234375,50,9100,DET@NY,NY,DET,,,,,,PG
+"3663754709","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-58462:Karl-Anthony Towns,126644-58462,C/PF,Karl-Anthony,Karl-Anthony Towns,Towns,40.32156671262255,51,8800,DET@NY,NY,DET,,,,,,PF/C
+"3663754710","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-9646:Kevin Durant,126644-9646,SF/PF,Kevin,Kevin Durant,Durant,40.82800048828125,50,8700,HOU@CHA,HOU,CHA,,,,,,SF/PF
+"3663769886","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","","","","","","","","","","",126644-145485:LaMelo Ball,126644-145485,PG,LaMelo,LaMelo Ball,Ball,37.071110026041666,45,8500,HOU@CHA,CHA,HOU,,,,,,PG
+"3663769888","126644-279018939","$175K Thu NBA Comeback Shot ($30K to 1st)","5","126644-145331","126644-84717","126644-228163","126644-228133","126644-188418","126644-58153","126644-157833","126644-188409","126644-157839","",126644-188405:Amen Thompson,126644-188405,SG/PG,Amen,Amen Thompson,Thompson,38.4673086313101,52,8400,HOU@CHA,HOU,CHA,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-58460:Devin Booker,126644-58460,PG/SG,Devin,Devin Booker,Booker,39.58604537609012,43,8300,PHO@SA,PHO,SA,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-60021:Pascal Siakam,126644-60021,PF/C,Pascal,Pascal Siakam,Siakam,40.25686465992647,51,8300,IND@WAS,IND,WAS,O,Personal,,,,PF/C
+"","","","","","","","","","","","","","",126644-84682:Michael Porter,126644-84682,PF/SF,Michael,Michael Porter,Porter,39.751220703125,41,8200,BKN@CLE,BKN,CLE,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-203723:Stephon Castle,126644-203723,SG/PG,Stephon,Stephon Castle,Castle,34.63409146395597,44,8100,PHO@SA,SA,PHO,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-84671:Trae Young,126644-84671,PG,Trae,Trae Young,Young,35.15,10,8000,IND@WAS,WAS,IND,O,Knee,,,,PG
+"","","","","","","","","","","","","","",126644-203764:Alex Sarr,126644-203764,C/PF,Alex,Alex Sarr,Sarr,37.49512314214939,41,7900,IND@WAS,WAS,IND,O,Hamstring,,,,PF/C
+"","","","","","","","","","","","","","",126644-188419:Brandon Miller,126644-188419,SF/SG,Brandon,Brandon Miller,Miller,34.35526315789474,38,7800,HOU@CHA,CHA,HOU,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-80821:Jarrett Allen,126644-80821,C/PF,Jarrett,Jarrett Allen,Allen,31.644184910973838,43,7800,BKN@CLE,CLE,BKN,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-66048:Brandon Ingram,126644-66048,SF/PF,Brandon,Brandon Ingram,Ingram,36.39245375147406,53,7700,TOR@CHI,TOR,CHI,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-157905:Josh Giddey,126644-157905,PG/SG,Josh,Josh Giddey,Giddey,42.232353659237134,34,7700,TOR@CHI,CHI,TOR,P,Hamstring,,,,PG/SG
+"","","","","","","","","","","","","","",126644-157845:Evan Mobley,126644-157845,PF/C,Evan,Evan Mobley,Mobley,40.966666085379465,42,7600,BKN@CLE,CLE,BKN,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-110356:Nickeil Alexander-Walker,126644-110356,SG/PG,Nickeil,Nickeil Alexander-Walker,Alexander-Walker,33.23148148148148,54,7500,ATL@PHI,ATL,PHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-171779:Jalen Duren,126644-171779,C,Jalen,Jalen Duren,Duren,35.93409035422585,44,7400,DET@NY,DET,NY,O,Suspension,,,,C
+"","","","","","","","","","","","","","",126644-80810:De'Aaron Fox,126644-80810,PG,De'Aaron,De'Aaron Fox,Fox,35.67999945746528,45,7300,PHO@SA,SA,PHO,,,,,,PG
+"","","","","","","","","","","","","","",126644-171747:Andrew Nembhard,126644-171747,PG/SG,Andrew,Andrew Nembhard,Nembhard,32.92790754451308,43,7100,IND@WAS,IND,WAS,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228135:Kon Knueppel,126644-228135,SF/SG,Kon,Kon Knueppel,Knueppel,31.414815266927082,54,7100,HOU@CHA,CHA,HOU,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-203761:Matas Buzelis,126644-203761,PF/SF,Matas,Matas Buzelis,Buzelis,29.185453657670454,55,7000,TOR@CHI,CHI,TOR,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-68090:OG Anunoby,126644-68090,SF/PF,OG,OG Anunoby,Anunoby,31.865853658536587,41,7000,DET@NY,NY,DET,P,Toe,,,,SF/PF
+"","","","","","","","","","","","","","",126644-145304:Onyeka Okongwu,126644-145304,C/PF,Onyeka,Onyeka Okongwu,Okongwu,34.82,50,6900,ATL@PHI,ATL,PHI,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-145348:Immanuel Quickley,126644-145348,PG/SG,Immanuel,Immanuel Quickley,Quickley,33.72884662334736,52,6900,TOR@CHI,TOR,CHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-171784:Dyson Daniels,126644-171784,SG/PG,Dyson,Dyson Daniels,Daniels,33.384906121020045,53,6800,ATL@PHI,ATL,PHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-203722:Kyshawn George,126644-203722,SF/SG,Kyshawn,Kyshawn George,George,31.96046625181686,43,6800,IND@WAS,WAS,IND,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-40562:Josh Hart,126644-40562,SF/PF,Josh,Josh Hart,Hart,31.67209359102471,43,6700,DET@NY,NY,DET,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-171767:Jabari Smith,126644-171767,PF/C,Jabari,Jabari Smith,Smith,30.392308161808895,52,6600,HOU@CHA,HOU,CHA,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-60233:Dillon Brooks,126644-60233,SF/SG,Dillon,Dillon Brooks,Brooks,30.163265306122447,49,6600,PHO@SA,PHO,SA,O,Suspension,,,,SG/SF
+"","","","","","","","","","","","","","",126644-84670:Mikal Bridges,126644-84670,SG/SF,Mikal,Mikal Bridges,Bridges,32.763636363636365,55,6500,DET@NY,NY,DET,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-110357:RJ Barrett,126644-110357,SG/SF,RJ,RJ Barrett,Barrett,31.73871046496976,31,6500,TOR@CHI,TOR,CHI,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-228133:VJ Edgecombe,126644-228133,SG/PG,VJ,VJ Edgecombe,Edgecombe,31.66,50,6500,ATL@PHI,PHI,ATL,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-188426:Ausar Thompson,126644-188426,SF/SG,Ausar,Ausar Thompson,Thompson,28.134693379304846,49,6400,DET@NY,DET,NY,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-84678:Miles Bridges,126644-84678,PF/SF,Miles,Miles Bridges,Bridges,32.196226875737025,53,6400,HOU@CHA,CHA,HOU,O,Suspension,,,,SF/PF
+"","","","","","","","","","","","","","",126644-19067:CJ McCollum,126644-19067,SG/PG,CJ,CJ McCollum,McCollum,29.85882448682598,51,6300,ATL@PHI,ATL,PHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-171769:Tari Eason,126644-171769,SF/PF,Tari,Tari Eason,Eason,25.654838315902218,31,6300,HOU@CHA,HOU,CHA,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-70827:Ivica Zubac,126644-70827,C,Ivica,Ivica Zubac,Zubac,32.66511571130087,43,6200,IND@WAS,IND,WAS,O,Ankle,,,,C
+"","","","","","","","","","","","","","",126644-58153:Kelly Oubre,126644-58153,SF/PF,Kelly,Kelly Oubre,Oubre,26.271875381469727,32,6200,ATL@PHI,PHI,ATL,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-84711:Grayson Allen,126644-84711,SG/SF,Grayson,Grayson Allen,Allen,30.119998604910716,35,6100,PHO@SA,PHO,SA,Q,Ankle,,,,SG/SF
+"","","","","","","","","","","","","","",126644-145323:Tre Jones,126644-145323,SG/PG,Tre,Tre Jones,Jones,27.831578304893092,38,6000,TOR@CHI,CHI,TOR,P,Hamstring,,,,PG/SG
+"","","","","","","","","","","","","","",126644-84717:Anfernee Simons,126644-84717,SG/PG,Anfernee,Anfernee Simons,Simons,21.866038196491747,53,5900,TOR@CHI,CHI,TOR,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-171780:Jaden Ivey,126644-171780,SG/PG,Jaden,Jaden Ivey,Ivey,16.140540870460303,37,5900,TOR@CHI,CHI,TOR,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228110:Nolan Traore,126644-228110,PG,Nolan,Nolan Traore,Traore,15.429031864289314,31,5900,BKN@CLE,BKN,CLE,,,,,,PG
+"","","","","","","","","","","","","","",126644-110354:Nic Claxton,126644-110354,C,Nic,Nic Claxton,Claxton,31.76,50,5900,BKN@CLE,BKN,CLE,O,Ankle,,,,C
+"","","","","","","","","","","","","","",126644-110326:Coby White,126644-110326,SG/PG,Coby,Coby White,White,29.365516399515087,29,5800,HOU@CHA,CHA,HOU,O,Calf,,,,PG/SG
+"","","","","","","","","","","","","","",126644-171786:Mark Williams,126644-171786,C,Mark,Mark Williams,Williams,28.1360009765625,50,5800,PHO@SA,PHO,SA,,,,,,C
+"","","","","","","","","","","","","","",126644-228122:Collin Murray-Boyles,126644-228122,PF/C,Collin,Collin Murray-Boyles,Murray-Boyles,21.16976715797602,43,5800,TOR@CHI,TOR,CHI,P,Thumb,,,,PF/C
+"","","","","","","","","","","","","","",126644-145322:Jalen Smith,126644-145322,C/PF,Jalen,Jalen Smith,Smith,23.060464548510176,43,5800,TOR@CHI,CHI,TOR,P,Calf,,,,PF/C
+"","","","","","","","","","","","","","",126644-203713:Reed Sheppard,126644-203713,PG/SG,Reed,Reed Sheppard,Sheppard,24.941509894604952,53,5800,HOU@CHA,HOU,CHA,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-188409:Jarace Walker,126644-188409,PF/SF,Jarace,Jarace Walker,Walker,20.5870361328125,54,5800,IND@WAS,IND,WAS,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-158855:Justin Champagnie,126644-158855,SF/PF,Justin,Justin Champagnie,Champagnie,19.84199951171875,50,5700,IND@WAS,WAS,IND,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-145329:Paul Reed,126644-145329,C,Paul,Paul Reed,Reed,17.05789505807977,38,5700,DET@NY,DET,NY,,,,,,C
+"","","","","","","","","","","","","","",126644-171668:Collin Gillespie,126644-171668,PG/SG,Collin,Collin Gillespie,Gillespie,28.52777777777778,54,5600,PHO@SA,PHO,SA,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228126:Dylan Harper,126644-228126,SG/PG,Dylan,Dylan Harper,Harper,22.651162790697676,43,5600,PHO@SA,SA,PHO,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-188431:Noah Clowney,126644-188431,PF,Noah,Noah Clowney,Clowney,23.617021276595743,47,5500,BKN@CLE,BKN,CLE,,,,,,PF
+"","","","","","","","","","","","","","",126644-157846:Sandro Mamukelashvili,126644-157846,C,Sandro,Sandro Mamukelashvili,Mamukelashvili,23.5679240676592,53,5500,TOR@CHI,TOR,CHI,Q,Ribs,,,,C
+"","","","","","","","","","","","","","",126644-159097:Jay Huff,126644-159097,C,Jay,Jay Huff,Huff,21.918181818181818,55,5500,IND@WAS,IND,WAS,,,,,,C
+"","","","","","","","","","","","","","",126644-188451:Tristan Vukcevic,126644-188451,C,Tristan,Tristan Vukcevic,Vukcevic,13.975757945667613,33,5400,IND@WAS,WAS,IND,,,,,,C
+"","","","","","","","","","","","","","",126644-157839:Day'Ron Sharpe,126644-157839,C,Day'Ron,Day'Ron Sharpe,Sharpe,22.937255859375,51,5400,BKN@CLE,BKN,CLE,,,,,,C
+"","","","","","","","","","","","","","",126644-14518:Tobias Harris,126644-14518,PF/SF,Tobias,Tobias Harris,Harris,24.951351681271113,37,5400,DET@NY,DET,NY,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-171765:Moussa Diabate,126644-171765,C,Moussa,Moussa Diabate,Diabate,24.9039990234375,50,5400,HOU@CHA,CHA,HOU,O,Suspension,,,,C
+"","","","","","","","","","","","","","",126644-203728:Jaylon Tyson,126644-203728,SF/SG,Jaylon,Jaylon Tyson,Tyson,26.01,50,5400,BKN@CLE,CLE,BKN,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-228111:Danny Wolf,126644-228111,PF/SF,Danny,Danny Wolf,Wolf,19.084615071614582,39,5300,BKN@CLE,BKN,CLE,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-228118:Tre Johnson,126644-228118,SG/PG,Tre,Tre Johnson,Johnson,20.894999694824218,40,5300,IND@WAS,WAS,IND,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-145324:Devin Vassell,126644-145324,SF/SG,Devin,Devin Vassell,Vassell,25.099999404535062,41,5300,PHO@SA,SA,PHO,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-188416:Bilal Coulibaly,126644-188416,SF/PF,Bilal,Bilal Coulibaly,Coulibaly,24.32424279415246,33,5200,IND@WAS,WAS,IND,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-58378:Jakob Poeltl,126644-58378,C,Jakob,Jakob Poeltl,Poeltl,24.049998890269887,22,5200,TOR@CHI,TOR,CHI,,,,,,C
+"","","","","","","","","","","","","","",126644-84667:Collin Sexton,126644-84667,SG/PG,Collin,Collin Sexton,Sexton,23.148887803819445,45,5200,TOR@CHI,CHI,TOR,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228109:Egor Demin,126644-228109,PG/SG,Egor,Egor Demin,Demin,21.039130169412363,46,5200,BKN@CLE,BKN,CLE,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-145307:Isaiah Stewart,126644-145307,C/PF,Isaiah,Isaiah Stewart,Stewart,22.6437505086263,48,5100,DET@NY,DET,NY,O,Suspension,,,,PF/C
+"","","","","","","","","","","","","","",126644-145333:Aaron Nesmith,126644-145333,SF/PF,Aaron,Aaron Nesmith,Nesmith,24.668750762939453,32,5100,IND@WAS,IND,WAS,Q,Back,,,,SF/PF
+"","","","","","","","","","","","","","",126644-110347:Keldon Johnson,126644-110347,SF/PF,Keldon,Keldon Johnson,Johnson,24.19629584418403,54,5000,PHO@SA,SA,PHO,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-203721:Bub Carrington,126644-203721,PG,Bub,Bub Carrington,Carrington,21.32830234743514,53,5000,IND@WAS,WAS,IND,,,,,,PG
+"","","","","","","","","","","","","","",126644-15557:Andre Drummond,126644-15557,C,Andre,Andre Drummond,Drummond,21.769999694824218,40,4800,ATL@PHI,PHI,ATL,,,,,,C
+"","","","","","","","","","","","","","",126644-18338:Royce O'Neale,126644-18338,SF/PF,Royce,Royce O'Neale,O'Neale,23.349090021306818,55,4800,PHO@SA,PHO,SA,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-84709:Mitchell Robinson,126644-84709,C,Mitchell,Mitchell Robinson,Robinson,22.312820825821316,39,4700,DET@NY,NY,DET,,,,,,C
+"","","","","","","","","","","","","","",126644-228117:Will Riley,126644-228117,SF/PF,Will,Will Riley,Riley,13.026666937934028,45,4700,IND@WAS,WAS,IND,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-157907:Jalen Green,126644-157907,SG/PG,Jalen,Jalen Green,Green,17,7,4600,PHO@SA,PHO,SA,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228163:Jamir Watkins,126644-228163,SG,Jamir,Jamir Watkins,Watkins,13.748148600260416,27,4600,IND@WAS,WAS,IND,,,,,,SG
+"","","","","","","","","","","","","","",126644-171925:Dominick Barlow,126644-171925,PF/C,Dominick,Dominick Barlow,Barlow,20.27906976744186,43,4600,ATL@PHI,PHI,ATL,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-160174:Jordan Goodwin,126644-160174,SG/SF,Jordan,Jordan Goodwin,Goodwin,21.974999060997597,52,4600,PHO@SA,PHO,SA,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-203812:Daniss Jenkins,126644-203812,PG/SG,Daniss,Daniss Jenkins,Jenkins,16.990908536044035,44,4500,DET@NY,DET,NY,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-179762:Quenton Jackson,126644-179762,SG/PG,Quenton,Quenton Jackson,Jackson,15.207692072941708,26,4500,IND@WAS,IND,WAS,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-85137:Duncan Robinson,126644-85137,SG/SF,Duncan,Duncan Robinson,Robinson,20.449020086550245,51,4500,DET@NY,DET,NY,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-41083:Luke Kornet,126644-41083,C,Luke,Luke Kornet,Kornet,22.94545399058949,44,4400,PHO@SA,SA,PHO,,,,,,C
+"","","","","","","","","","","","","","",126644-157843:Ziaire Williams,126644-157843,SF/SG,Ziaire,Ziaire Williams,Williams,18.165789152446546,38,4400,BKN@CLE,BKN,CLE,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-70823:Guerschon Yabusele,126644-70823,C/PF,Guerschon,Guerschon Yabusele,Yabusele,7.75111083984375,45,4400,TOR@CHI,CHI,TOR,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-40201:Dennis Schroder,126644-40201,PG/SG,Dennis,Dennis Schroder,Schroder,24.668182373046875,44,4400,BKN@CLE,CLE,BKN,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-161552:Micah Potter,126644-161552,PF/C,Micah,Micah Potter,Potter,16.227272727272727,22,4400,IND@WAS,IND,WAS,Q,Ankle,,,,PF/C
+"","","","","","","","","","","","","","",126644-157826:Quentin Grimes,126644-157826,SG/SF,Quentin,Quentin Grimes,Grimes,24.75,48,4300,ATL@PHI,PHI,ATL,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-158373:Jose Alvarado,126644-158373,PG,Jose,Jose Alvarado,Alvarado,18.511363636363637,44,4300,DET@NY,NY,DET,,,,,,PG
+"","","","","","","","","","","","","","",126644-228147:Ryan Kalkbrenner,126644-228147,C,Ryan,Ryan Kalkbrenner,Kalkbrenner,21.683721498001454,43,4300,HOU@CHA,CHA,HOU,,,,,,C
+"","","","","","","","","","","","","","",126644-145318:Nick Richards,126644-145318,C,Nick,Nick Richards,Richards,10.035484067855343,31,4300,TOR@CHI,CHI,TOR,,,,,,C
+"","","","","","","","","","","","","","",126644-145317:Sam Merrill,126644-145317,SF/SG,Sam,Sam Merrill,Merrill,21.103226200226814,31,4300,BKN@CLE,CLE,BKN,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-203718:Rob Dillingham,126644-203718,PG,Rob,Rob Dillingham,Dillingham,9.536841944644326,38,4300,TOR@CHI,CHI,TOR,,,,,,PG
+"","","","","","","","","","","","","","",126644-18393:T.J. McConnell,126644-18393,PG,T.J.,T.J. McConnell,McConnell,22.164999389648436,40,4300,IND@WAS,IND,WAS,Q,Hamstring,,,,PG
+"","","","","","","","","","","","","","",126644-172098:Julian Champagnie,126644-172098,SG/SF,Julian,Julian Champagnie,Champagnie,22.94629584418403,54,4200,PHO@SA,SA,PHO,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-161490:Ethan Thompson,126644-161490,SG,Ethan,Ethan Thompson,Thompson,11.409090909090908,22,4200,IND@WAS,IND,WAS,,,,,,SG
+"","","","","","","","","","","","","","",126644-157904:Jonathan Kuminga,126644-157904,SF/PF,Jonathan,Jonathan Kuminga,Kuminga,22.66999969482422,20,4200,ATL@PHI,ATL,PHI,O,Knee,,,,SF/PF
+"","","","","","","","","","","","","","",126644-145308:Patrick Williams,126644-145308,PF/SF,Patrick,Patrick Williams,Williams,14.294117647058824,51,4200,TOR@CHI,CHI,TOR,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-158137:Jock Landale,126644-158137,C,Jock,Jock Landale,Landale,23.753061722735968,49,4200,ATL@PHI,ATL,PHI,,,,,,C
+"","","","","","","","","","","","","","",126644-145341:Isaac Okoro,126644-145341,SF,Isaac,Isaac Okoro,Okoro,17.23695705247962,46,4200,TOR@CHI,CHI,TOR,,,,,,SF
+"","","","","","","","","","","","","","",126644-203780:Oso Ighodaro,126644-203780,PF/C,Oso,Oso Ighodaro,Ighodaro,17.045454545454547,55,4100,PHO@SA,PHO,SA,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-203798:Jamal Shead,126644-203798,PG/SG,Jamal,Jamal Shead,Shead,19.205455433238637,55,4100,TOR@CHI,TOR,CHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-15946:Harrison Barnes,126644-15946,PF/SF,Harrison,Harrison Barnes,Barnes,18.99444354021991,54,4100,PHO@SA,SA,PHO,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-158856:Trendon Watford,126644-158856,PF/C,Trendon,Trendon Watford,Watford,14.984375,32,4100,ATL@PHI,PHI,ATL,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-203762:Ronald Holland,126644-203762,PF/SF,Ronald,Ronald Holland,Holland,19.338775011957907,49,4100,DET@NY,DET,NY,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-189467:Craig Porter,126644-189467,PG,Craig,Craig Porter,Porter,17.532652562978317,49,4000,BKN@CLE,CLE,BKN,,,,,,PG
+"","","","","","","","","","","","","","",126644-112708:Max Strus,126644-112708,SG/SF,Max,Max Strus,Strus,21.42542331501589,59,4000,BKN@CLE,CLE,BKN,O,Foot,,,,SG/SF
+"","","","","","","","","","","","","","",126644-171669:Keon Ellis,126644-171669,SG/SF,Keon,Keon Ellis,Ellis,12.74680799119016,47,4000,BKN@CLE,CLE,BKN,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-110315:Terance Mann,126644-110315,SF/SG,Terance,Terance Mann,Mann,18.33695652173913,46,4000,BKN@CLE,BKN,CLE,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-110318:Grant Williams,126644-110318,PF,Grant,Grant Williams,Williams,15.014285496303014,14,4000,HOU@CHA,CHA,HOU,,,,,,PF
+"","","","","","","","","","","","","","",126644-171763:Dalen Terry,126644-171763,SF,Dalen,Dalen Terry,Terry,9.685714285714285,35,4000,ATL@PHI,PHI,ATL,,,,,,SF
+"","","","","","","","","","","","","","",126644-228125:Carter Bryant,126644-228125,SF,Carter,Carter Bryant,Bryant,7.209302325581396,43,4000,PHO@SA,SA,PHO,,,,,,SF
+"","","","","","","","","","","","","","",126644-228161:Kam Jones,126644-228161,SG/PG,Kam,Kam Jones,Jones,6.7944446139865455,18,4000,IND@WAS,IND,WAS,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-145339:Obi Toppin,126644-145339,PF,Obi,Obi Toppin,Toppin,25.5,3,4000,IND@WAS,IND,WAS,O,Foot,,,,PF
+"","","","","","","","","","","","","","",126644-203767:Zaccharie Risacher,126644-203767,SF/PF,Zaccharie,Zaccharie Risacher,Risacher,20.023809523809526,42,4000,ATL@PHI,ATL,PHI,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-188410:Ben Sheppard,126644-188410,SG/PG,Ben,Ben Sheppard,Sheppard,14.12272782759233,44,4000,IND@WAS,IND,WAS,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-188418:Kobe Brown,126644-188418,SF,Kobe,Kobe Brown,Brown,7.130555894639757,36,3900,IND@WAS,IND,WAS,,,,,,SF
+"","","","","","","","","","","","","","",126644-157819:Corey Kispert,126644-157819,SF/SG,Corey,Corey Kispert,Kispert,15.82285679408482,35,3900,ATL@PHI,ATL,PHI,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-157832:Sharife Cooper,126644-157832,PG,Sharife,Sharife Cooper,Cooper,11.158332824707031,12,3900,IND@WAS,WAS,IND,,,,,,PG
+"","","","","","","","","","","","","","",126644-145548:Anthony Gill,126644-145548,PF,Anthony,Anthony Gill,Gill,6.317856924874442,28,3900,IND@WAS,WAS,IND,,,,,,PF
+"","","","","","","","","","","","","","",126644-213172:Nae'Qwan Tomlin,126644-213172,PF/SF,Nae'Qwan,Nae'Qwan Tomlin,Tomlin,15.570453990589488,44,3900,BKN@CLE,CLE,BKN,O,Calf,,,,SF/PF
+"","","","","","","","","","","","","","",126644-84704:Kevin Huerter,126644-84704,SF/SG,Kevin,Kevin Huerter,Huerter,21.45208231608073,48,3900,DET@NY,DET,NY,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-67312:Thomas Bryant,126644-67312,C,Thomas,Thomas Bryant,Bryant,11.176922920422676,39,3900,BKN@CLE,CLE,BKN,,,,,,C
+"","","","","","","","","","","","","","",126644-84724:Landry Shamet,126644-84724,SG/SF,Landry,Landry Shamet,Shamet,15.813333129882812,30,3900,DET@NY,NY,DET,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-23798:Caris LeVert,126644-23798,SG/SF,Caris,Caris LeVert,LeVert,17.555555555555557,36,3900,DET@NY,DET,NY,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-228108:Ben Saraf,126644-228108,PG,Ben,Ben Saraf,Saraf,12.190909645774148,22,3900,BKN@CLE,BKN,CLE,,,,,,PG
+"","","","","","","","","","","","","","",126644-55059:Clint Capela,126644-55059,C,Clint,Clint Capela,Capela,13.438297352892286,47,3900,HOU@CHA,HOU,CHA,,,,,,C
+"","","","","","","","","","","","","","",126644-171802:MarJon Beauchamp,126644-171802,SG,MarJon,MarJon Beauchamp,Beauchamp,21.450000762939453,2,3900,ATL@PHI,PHI,ATL,,,,,,SG
+"","","","","","","","","","","","","","",126644-203727:Ja'Kobe Walter,126644-203727,SG,Ja'Kobe,Ja'Kobe Walter,Walter,13.046666124131944,45,3900,TOR@CHI,TOR,CHI,,,,,,SG
+"","","","","","","","","","","","","","",126644-203772:Justin Edwards,126644-203772,SF/PF,Justin,Justin Edwards,Edwards,10.23414649032965,41,3900,ATL@PHI,PHI,ATL,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-188454:Mouhamed Gueye,126644-188454,PF/C,Mouhamed,Mouhamed Gueye,Gueye,14.34339645673644,53,3800,ATL@PHI,ATL,PHI,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-23665:Buddy Hield,126644-23665,SG/SF,Buddy,Buddy Hield,Hield,15.057777235243055,45,3800,ATL@PHI,ATL,PHI,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-157831:Tre Mann,126644-157831,SG/PG,Tre,Tre Mann,Mann,13.650000179515166,34,3800,HOU@CHA,CHA,HOU,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-228107:Drake Powell,126644-228107,SG/SF,Drake,Drake Powell,Powell,11.564286004929315,42,3800,BKN@CLE,BKN,CLE,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-171791:Jaden Hardy,126644-171791,SG,Jaden,Jaden Hardy,Hardy,10.079999651227679,35,3800,IND@WAS,WAS,IND,,,,,,SG
+"","","","","","","","","","","","","","",126644-110883:Dean Wade,126644-110883,PF/SF,Dean,Dean Wade,Wade,16.432557571765987,43,3800,BKN@CLE,CLE,BKN,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-228160:Taelon Peter,126644-228160,PG,Taelon,Taelon Peter,Peter,6.212500254313151,24,3800,IND@WAS,IND,WAS,,,,,,PG
+"","","","","","","","","","","","","","",126644-228167:Mohamed Diawara,126644-228167,SF,Mohamed,Mohamed Diawara,Diawara,5.680000135633681,45,3800,DET@NY,NY,DET,,,,,,SF
+"","","","","","","","","","","","","","",126644-111492:Amir Coffey,126644-111492,SF,Amir,Amir Coffey,Coffey,5.112500190734863,32,3800,PHO@SA,PHO,SA,,,,,,SF
+"","","","","","","","","","","","","","",126644-80815:Zach Collins,126644-80815,C/PF,Zach,Zach Collins,Collins,19.469999694824217,10,3800,TOR@CHI,CHI,TOR,O,Toe,,,,PF/C
+"","","","","","","","","","","","","","",126644-58312:D'Angelo Russell,126644-58312,PG,D'Angelo,D'Angelo Russell,Russell,18.7000004695012,26,3800,IND@WAS,WAS,IND,O,Not injury related,,,,PG
+"","","","","","","","","","","","","","",126644-203771:Adem Bona,126644-203771,C,Adem,Adem Bona,Bona,13.382222493489584,45,3800,ATL@PHI,PHI,ATL,,,,,,C
+"","","","","","","","","","","","","","",126644-203787:Ariel Hukporti,126644-203787,C,Ariel,Ariel Hukporti,Hukporti,7.858974358974359,39,3700,DET@NY,NY,DET,,,,,,C
+"","","","","","","","","","","","","","",126644-101387:Gabe Vincent,126644-101387,SG/PG,Gabe,Gabe Vincent,Vincent,9.236666870117187,30,3700,ATL@PHI,ATL,PHI,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-203790:PJ Hall,126644-203790,C,PJ,PJ Hall,Hall,11.618749618530273,16,3700,HOU@CHA,CHA,HOU,,,,,,C
+"","","","","","","","","","","","","","",126644-188434:Gradey Dick,126644-188434,SF,Gradey,Gradey Dick,Dick,11.827272727272728,55,3700,TOR@CHI,TOR,CHI,,,,,,SF
+"","","","","","","","","","","","","","",126644-188442:Jalen Wilson,126644-188442,SF/PF,Jalen,Jalen Wilson,Wilson,9.028571428571428,35,3700,BKN@CLE,BKN,CLE,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-188450:Trayce Jackson-Davis,126644-188450,C/PF,Trayce,Trayce Jackson-Davis,Jackson-Davis,11.763157894736842,38,3700,TOR@CHI,TOR,CHI,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-112709:Javonte Green,126644-112709,SF,Javonte,Javonte Green,Green,15.59433962264151,53,3700,DET@NY,DET,NY,,,,,,SF
+"","","","","","","","","","","","","","",126644-233076:Keshon Gilbert,126644-233076,PG,Keshon,Keshon Gilbert,Gilbert,9.5,3,3700,IND@WAS,WAS,IND,,,,,,PG
+"","","","","","","","","","","","","","",126644-171679:Jamaree Bouyea,126644-171679,PG,Jamaree,Jamaree Bouyea,Bouyea,14.474999564034599,28,3700,PHO@SA,PHO,SA,,,,,,PG
+"","","","","","","","","","","","","","",126644-20640:Jordan Clarkson,126644-20640,SG/PG,Jordan,Jordan Clarkson,Clarkson,13.849019368489584,51,3700,DET@NY,NY,DET,,,,,,PG/SG
+"","","","","","","","","","","","","","",126644-233152:Kadary Richmond,126644-233152,PG,Kadary,Kadary Richmond,Richmond,14.899999618530273,1,3700,IND@WAS,WAS,IND,,,,,,PG
+"","","","","","","","","","","","","","",126644-84689:Josh Okogie,126644-84689,SG/SF,Josh,Josh Okogie,Okogie,12.715384850135216,52,3700,HOU@CHA,HOU,CHA,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-171781:Ochai Agbaji,126644-171781,SG,Ochai,Ochai Agbaji,Agbaji,9.725581679233285,43,3700,BKN@CLE,BKN,CLE,,,,,,SG
+"","","","","","","","","","","","","","",126644-228116:Asa Newell,126644-228116,PF,Asa,Asa Newell,Newell,9.97948749248798,39,3700,ATL@PHI,ATL,PHI,,,,,,PF
+"","","","","","","","","","","","","","",126644-228148:Sion James,126644-228148,SF/SG,Sion,Sion James,James,14.314545232599432,55,3700,HOU@CHA,CHA,HOU,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-145325:Josh Green,126644-145325,SG/SF,Josh,Josh Green,Green,9.85483870967742,31,3700,HOU@CHA,CHA,HOU,,,,,,SG/SF
+"","","","","","","","","","","","","","",126644-203724:Ryan Dunn,126644-203724,PF/SF,Ryan,Ryan Dunn,Dunn,16.170833587646484,48,3700,PHO@SA,PHO,SA,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-203766:Tidjane Salaun,126644-203766,PF,Tidjane,Tidjane Salaun,Salaun,13.837499618530273,32,3700,HOU@CHA,CHA,HOU,,,,,,PF
+"","","","","","","","","","","","","","",126644-16376:Dorian Finney-Smith,126644-16376,PF,Dorian,Dorian Finney-Smith,Finney-Smith,7.944999694824219,20,3700,HOU@CHA,HOU,CHA,,,,,,PF
+"","","","","","","","","","","","","","",126644-20992:Larry Nance,126644-20992,C/PF,Larry,Larry Nance,Nance,9.972000122070312,25,3600,BKN@CLE,CLE,BKN,,,,,,PF/C
+"","","","","","","","","","","","","","",126644-188427:Marcus Sasser,126644-188427,PG,Marcus,Marcus Sasser,Sasser,10.970588235294118,17,3600,DET@NY,DET,NY,,,,,,PG
+"","","","","","","","","","","","","","",126644-203789:Tyler Kolek,126644-203789,PG,Tyler,Tyler Kolek,Kolek,11.81874974568685,48,3600,DET@NY,NY,DET,,,,,,PG
+"","","","","","","","","","","","","","",126644-145576:Jae'Sean Tate,126644-145576,SF,Jae'Sean,Jae'Sean Tate,Tate,5.887499809265137,32,3600,HOU@CHA,HOU,CHA,,,,,,SF
+"","","","","","","","","","","","","","",126644-213225:Yuki Kawamura,126644-213225,PG,Yuki,Yuki Kawamura,Kawamura,20.799999237060547,4,3600,TOR@CHI,CHI,TOR,,,,,,PG
+"","","","","","","","","","","","","","",126644-84719:Aaron Holiday,126644-84719,PG,Aaron,Aaron Holiday,Holiday,9.314285714285715,35,3600,HOU@CHA,HOU,CHA,,,,,,PG
+"","","","","","","","","","","","","","",126644-171762:JD Davison,126644-171762,PG,JD,JD Davison,Davison,5.716666539510091,24,3600,HOU@CHA,HOU,CHA,,,,,,PG
+"","","","","","","","","","","","","","",126644-171776:Josh Minott,126644-171776,PF/SF,Josh,Josh Minott,Minott,14.275757760712594,33,3600,BKN@CLE,BKN,CLE,,,,,,SF/PF
+"","","","","","","","","","","","","","",126644-213259:Tolu Smith,126644-213259,PF,Tolu,Tolu Smith,Smith,15.199999491373697,6,3600,DET@NY,DET,NY,,,,,,PF
+"","","","","","","","","","","","","","",126644-228130:Khaman Maluach,126644-228130,C,Khaman,Khaman Maluach,Maluach,3.769565084706182,23,3600,PHO@SA,PHO,SA,,,,,,C
+"","","","","","","","","","","","","","",126644-228159:Tyrese Proctor,126644-228159,PG,Tyrese,Tyrese Proctor,Proctor,8.684615697616186,39,3600,BKN@CLE,CLE,BKN,,,,,,PG
+"","","","","","","","","","","","","","",126644-228173:Rasheer Fleming,126644-228173,PF,Rasheer,Rasheer Fleming,Fleming,5.516666666666667,30,3600,PHO@SA,PHO,SA,,,,,,PF
+"","","","","","","","","","","","","","",126644-228183:Lachlan Olbrich,126644-228183,C,Lachlan,Lachlan Olbrich,Olbrich,5.447058733771829,17,3600,TOR@CHI,CHI,TOR,,,,,,C
+"","","","","","","","","","","","","","",126644-145327:Cole Anthony,126644-145327,PG/SG,Cole,Cole Anthony,Anthony,15.654286411830357,35,3600,PHO@SA,PHO,SA,O,Not injury related,,,,PG/SG
+"","","","","","","","","","","","","","",126644-203782:Antonio Reeves,126644-203782,SG,Antonio,Antonio Reeves,Reeves,4.714285714285714,7,3500,HOU@CHA,CHA,HOU,,,,,,SG
+"","","","","","","","","","","","","","",126644-203785:Isaac Jones,126644-203785,PF,Isaac,Isaac Jones,Jones,2.2249999046325684,4,3500,DET@NY,DET,NY,,,,,,PF
+"","","","","","","","","","","","","","",126644-203784:Isaiah Crawford,126644-203784,SF,Isaiah,Isaiah Crawford,Crawford,4.8799999237060545,5,3500,HOU@CHA,HOU,CHA,,,,,,SF
+"","","","","","","","","","","","","","",126644-203791:Nikola Durisic,126644-203791,SF,Nikola,Nikola Durisic,Durisic,,0,3500,ATL@PHI,ATL,PHI,,,,,,SF
+"","","","","","","","","","","","","","",126644-22541:Kelly Olynyk,126644-22541,C,Kelly,Kelly Olynyk,Olynyk,8.339999898274739,30,3500,PHO@SA,SA,PHO,,,,,,C
+"","","","","","","","","","","","","","",126644-203788:Kevin McCullar,126644-203788,SF,Kevin,Kevin McCullar,McCullar,6.143750190734863,16,3500,DET@NY,NY,DET,,,,,,SF
+"","","","","","","","","","","","","","",126644-203793:Harrison Ingram,126644-203793,SF,Harrison,Harrison Ingram,Ingram,2.6500000953674316,4,3500,PHO@SA,SA,PHO,,,,,,SF
+"","","","","","","","","","","","","","",126644-203799:Jonathan Mogbo,126644-203799,C,Jonathan,Jonathan Mogbo,Mogbo,4.669565283733865,23,3500,TOR@CHI,TOR,CHI,,,,,,C
+"","","","","","","","","","","","","","",126644-188452:Leonard Miller,126644-188452,SF,Leonard,Leonard Miller,Miller,4.5761904035295755,21,3500,TOR@CHI,CHI,TOR,,,,,,SF
+"","","","","","","","","","","","","","",126644-203813:Bobi Klintman,126644-203813,PF,Bobi,Bobi Klintman,Klintman,5.266666836208767,9,3500,DET@NY,DET,NY,,,,,,PF
+"","","","","","","","","","","","","","",126644-12341:Paul George,126644-12341,SF/PF,Paul,Paul George,George,32,27,3500,ATL@PHI,PHI,ATL,O,Suspension,,,,SF/PF
+"","","","","","","","","","","","","","",126644-172097:Tyson Etienne,126644-172097,PG,Tyson,Tyson Etienne,Etienne,1.5625,8,3500,BKN@CLE,BKN,CLE,,,,,,PG
+"","","","","","","","","","","","","","",126644-204370:Riley Minix,126644-204370,SF,Riley,Riley Minix,Minix,5.299999872843425,3,3500,BKN@CLE,CLE,BKN,,,,,,SF
+"","","","","","","","","","","","","","",126644-204374:David Jones Garcia,126644-204374,SF,David,David Jones Garcia,Jones Garcia,8.236363497647373,11,3500,PHO@SA,SA,PHO,O,Ankle,,,,SF
+"","","","","","","","","","","","","","",126644-85597:Jordan McLaughlin,126644-85597,PG,Jordan,Jordan McLaughlin,McLaughlin,5.364000244140625,25,3500,PHO@SA,SA,PHO,,,,,,PG
+"","","","","","","","","","","","","","",126644-233066:Chaney Johnson,126644-233066,SF,Chaney,Chaney Johnson,Johnson,,0,3500,BKN@CLE,BKN,CLE,,,,,,SF
+"","","","","","","","","","","","","","",126644-157810:Isaiah Livers,126644-157810,PF,Isaiah,Isaiah Livers,Livers,7.1793102395945585,29,3500,PHO@SA,PHO,SA,,,,,,PF
+"","","","","","","","","","","","","","",126644-179828:Keaton Wallace,126644-179828,PG,Keaton,Keaton Wallace,Wallace,9.63000030517578,40,3500,ATL@PHI,ATL,PHI,,,,,,PG
+"","","","","","","","","","","","","","",126644-15993:Pat Connaughton,126644-15993,SG,Pat,Pat Connaughton,Connaughton,6.136363636363637,22,3500,HOU@CHA,CHA,HOU,,,,,,SG
+"","","","","","","","","","","","","","",126644-23169:Steven Adams,126644-23169,C,Steven,Steven Adams,Adams,21.287500381469727,32,3500,HOU@CHA,HOU,CHA,O,Ankle,,,,C
+"","","","","","","","","","","","","","",126644-157824:Miles McBride,126644-157824,PG/SG,Miles,Miles McBride,McBride,22.44857177734375,35,3500,DET@NY,NY,DET,O,Pelvis,,,,PG/SG
+"","","","","","","","","","","","","","",126644-157842:Charles Bassey,126644-157842,C,Charles,Charles Bassey,Bassey,12.666666666666666,3,3500,ATL@PHI,PHI,ATL,,,,,,C
+"","","","","","","","","","","","","","",126644-14505:Bismack Biyombo,126644-14505,C,Bismack,Bismack Biyombo,Biyombo,2.4928572518484935,14,3500,PHO@SA,SA,PHO,,,,,,C
+"","","","","","","","","","","","","","",126644-24247:Fred VanVleet,126644-24247,PG,Fred,Fred VanVleet,VanVleet,31.417910447761194,67,3500,HOU@CHA,HOU,CHA,O,Knee,,,,PG
+"","","","","","","","","","","","","","",126644-213183:Tristan Enaruna,126644-213183,SF,Tristan,Tristan Enaruna,Enaruna,5.400000254313151,3,3500,BKN@CLE,CLE,BKN,,,,,,SF
+"","","","","","","","","","","","","","",126644-213191:Emanuel Miller,126644-213191,SF,Emanuel,Emanuel Miller,Miller,6.1200000762939455,5,3500,BKN@CLE,CLE,BKN,,,,,,SF
+"","","","","","","","","","","","","","",126644-171749:Jeremy Sochan,126644-171749,PF,Jeremy,Jeremy Sochan,Sochan,9.664285932268415,28,3500,DET@NY,NY,DET,,,,,,PF
+"","","","","","","","","","","","","","",126644-195819:Tosan Evbuomwan,126644-195819,SF,Tosan,Tosan Evbuomwan,Evbuomwan,0.48000001907348633,5,3500,HOU@CHA,CHA,HOU,,,,,,SF
+"","","","","","","","","","","","","","",126644-213226:RayJ Dennis,126644-213226,PG,RayJ,RayJ Dennis,Dennis,9.706667073567708,15,3500,ATL@PHI,ATL,PHI,,,,,,PG
+"","","","","","","","","","","","","","",126644-171764:Jabari Walker,126644-171764,PF,Jabari,Jabari Walker,Walker,9.46888902452257,45,3500,ATL@PHI,PHI,ATL,,,,,,PF
+"","","","","","","","","","","","","","",126644-171771:Caleb Houstan,126644-171771,SF,Caleb,Caleb Houstan,Houstan,3.4,10,3500,ATL@PHI,ATL,PHI,,,,,,SF
+"","","","","","","","","","","","","","",126644-171775:Christian Koloko,126644-171775,C,Christian,Christian Koloko,Koloko,12.009999847412109,20,3500,ATL@PHI,ATL,PHI,,,,,,C
+"","","","","","","","","","","","","","",126644-171773:Patrick Baldwin,126644-171773,PF,Patrick,Patrick Baldwin,Baldwin,3.7999998728434243,3,3500,ATL@PHI,PHI,ATL,,,,,,PF
+"","","","","","","","","","","","","","",126644-171778:Wendell Moore,126644-171778,SF,Wendell,Wendell Moore,Moore,6.540000152587891,5,3500,DET@NY,DET,NY,,,,,,SF
+"","","","","","","","","","","","","","",126644-171783:E.J. Liddell,126644-171783,PF,E.J.,E.J. Liddell,Liddell,3.8200000762939452,10,3500,BKN@CLE,BKN,CLE,,,,,,PF
+"","","","","","","","","","","","","","",126644-180484:Stanley Umude,126644-180484,SG,Stanley,Stanley Umude,Umude,0,1,3500,PHO@SA,SA,PHO,,,,,,SG
+"","","","","","","","","","","","","","",126644-160022:A.J. Lawson,126644-160022,SG,A.J.,A.J. Lawson,Lawson,7.546153728778545,13,3500,TOR@CHI,TOR,CHI,,,,,,SG
+"","","","","","","","","","","","","","",126644-228123:Noa Essengue,126644-228123,PF,Noa,Noa Essengue,Essengue,1.5,2,3500,TOR@CHI,CHI,TOR,O,Shoulder,,,,PF
+"","","","","","","","","","","","","","",126644-228134:Liam McNeeley,126644-228134,SF,Liam,Liam McNeeley,McNeeley,8.339285714285714,28,3500,HOU@CHA,CHA,HOU,O,Ankle,,,,SF
+"","","","","","","","","","","","","","",126644-228145:Chaz Lanier,126644-228145,SG,Chaz,Chaz Lanier,Lanier,5.865000152587891,20,3500,DET@NY,DET,NY,,,,,,SG
+"","","","","","","","","","","","","","",126644-228155:Alijah Martin,126644-228155,SG,Alijah,Alijah Martin,Martin,6.6769233116736775,13,3500,TOR@CHI,TOR,CHI,,,,,,SG
+"","","","","","","","","","","","","","",126644-9535:Kyle Lowry,126644-9535,PG,Kyle,Kyle Lowry,Lowry,5.114285605294364,7,3500,ATL@PHI,PHI,ATL,,,,,,PG
+"","","","","","","","","","","","","","",126644-11074:Garrett Temple,126644-11074,SG,Garrett,Garrett Temple,Temple,1.8307691720815806,13,3500,TOR@CHI,TOR,CHI,,,,,,SG
+"","","","","","","","","","","","","","",126644-228171:Johni Broome,126644-228171,PF,Johni,Johni Broome,Broome,4.290909160267223,11,3500,ATL@PHI,PHI,ATL,,,,,,PF
+"","","","","","","","","","","","","","",126644-228172:Koby Brea,126644-228172,SG,Koby,Koby Brea,Brea,5.133333206176758,3,3500,PHO@SA,PHO,SA,,,,,,SG
+"","","","","","","","","","","","","","",126644-228181:Chucky Hepburn,126644-228181,PG,Chucky,Chucky Hepburn,Hepburn,3.0999999046325684,2,3500,TOR@CHI,TOR,CHI,O,Knee,,,,PG
+"","","","","","","","","","","","","","",126644-195937:Trey Jemison,126644-195937,C,Trey,Trey Jemison,Jemison,3.4,10,3500,DET@NY,NY,DET,,,,,,C
+"","","","","","","","","","","","","","",126644-213367:Jamison Battle,126644-213367,SF,Jamison,Jamison Battle,Battle,5.5256410256410255,39,3500,TOR@CHI,TOR,CHI,,,,,,SF
+"","","","","","","","","","","","","","",126644-159095:Mac McClung,126644-159095,PG,Mac,Mac McClung,McClung,12.5,4,3500,TOR@CHI,CHI,TOR,,,,,,PG
+"","","","","","","","","","","","","","",126644-15755:Anthony Davis,126644-15755,C/PF,Anthony,Anthony Davis,Davis,44.01000061035156,20,3500,IND@WAS,WAS,IND,O,Finger,,,,PF/C
+"","","","","","","","","","","","","","",126644-9648:Jeff Green,126644-9648,SF,Jeff,Jeff Green,Green,3.4722222222222223,18,3500,HOU@CHA,HOU,CHA,,,,,,SF
+"","","","","","","","","","","","","","",126644-145336:Xavier Tillman,126644-145336,C,Xavier,Xavier Tillman,Tillman,5.833333333333333,15,3500,HOU@CHA,CHA,HOU,,,,,,C
+"","","","","","","","","","","","","","",126644-145337:Tyrese Haliburton,126644-145337,PG,Tyrese,Tyrese Haliburton,Haliburton,41.08541615804037,96,3500,IND@WAS,IND,WAS,O,Achilles,,,,PG
+"","","","","","","","","","","","","","",126644-203720:Dillon Jones,126644-203720,SF,Dillon,Dillon Jones,Jones,5.875,4,3500,DET@NY,NY,DET,,,,,,SF
+"","","","","","","","","","","","","","",126644-165854:Lindy Waters,126644-165854,SG,Lindy,Lindy Waters,Waters,3.703571319580078,28,3500,PHO@SA,SA,PHO,O,Knee,,,,SG
+"","","","","","","","","","","","","","",126644-203760:Pacome Dadiet,126644-203760,SF,Pacome,Pacome Dadiet,Dadiet,2.6149999618530275,20,3500,DET@NY,NY,DET,,,,,,SF
+"","","","","","","","","","","","","","",126644-188406:Cam Whitmore,126644-188406,SF,Cam,Cam Whitmore,Whitmore,16.004762195405505,21,3500,IND@WAS,WAS,IND,O,Shoulder,,,,SF
+"","","","","","","","","","","","","","",126644-203775:Tristen Newton,126644-203775,PG,Tristen,Tristen Newton,Newton,1.475000023841858,8,3500,HOU@CHA,HOU,CHA,,,,,,PG
+"","","","","","","","","","","","","","",126644-203773:Johnny Furphy,126644-203773,SF,Johnny,Johnny Furphy,Furphy,13.631428745814732,35,3500,IND@WAS,IND,WAS,O,Knee,,,,SF

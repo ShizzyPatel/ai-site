@@ -54,7 +54,7 @@ export default function IndustriesMarketSection() {
   };
 
   return (
-    <Section tone="s9" className="py-24">
+    <Section  className="py-24">
       <div className="mx-auto max-w-6xl" ref={ref}>
         <div className="mb-10">
           <h2 className="font-display text-6xl leading-[1.02] tracking-tight text-[rgb(var(--text))]">

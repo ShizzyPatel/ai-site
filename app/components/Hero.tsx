@@ -9,20 +9,27 @@ import CountUpStat from "./CountUpStat";
 
 export default function Hero() {
     return (
-        <Section className="relative overflow-hidden bg-[rgb(var(--bg))]">
-            {/* Background image */}
-            <div className="absolute inset-0">
+        <Section className="relative isolate overflow-hidden theme-dark">
+            {/* Background image + overlays */}
+            <div className="absolute inset-0 z-0">
                 <Image
                     src="/images/hero/hero-image.png"
                     alt="Abstract AI network background"
                     fill
                     priority
-                    className="object-cover object-right opacity-70"
+                    className="object-cover object-right"
                 />
 
-                {/* Darken + left readability */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--bg))] via-[rgb(var(--bg))]/90 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/35" />
+                {/* Dark base overlay (lighter than before so image remains visible) */}
+                <div className="absolute inset-0 bg-[rgba(7,9,15,0.55)]" />
+
+                {/* Left-side emphasis gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[rgba(7,9,15,0.85)] via-[rgba(7,9,15,0.55)] to-[rgba(7,9,15,0.20)]" />
+            </div>
+
+            {/* Your hero content MUST be above */}
+            <div className="relative z-10">
+                {/* ... existing hero content ... */}
             </div>
 
             <Container className="relative z-10 py-24 md:py-28">
@@ -40,7 +47,7 @@ export default function Hero() {
                     <h1 className="font-display mt-6 text-5xl md:text-7xl leading-[1.03] tracking-tight text-[rgb(var(--text))] max-w-5xl">
                         The{" "}
                         <span className="bg-gradient-to-r from-[rgb(var(--primary))] to-[rgb(var(--primary2))] bg-clip-text text-transparent">
-                        Cognitive Intelligence Layer
+                            Cognitive Intelligence Layer
                         </span>{" "}
                         <br />
                         for the AI Economy

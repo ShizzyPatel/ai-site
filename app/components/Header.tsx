@@ -37,7 +37,7 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="hidden items-center gap-6 text-sm text-white md:flex">
+        <nav className="hidden items-center gap-6 text-sm text-gold md:flex">
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#problem">Problem</a>
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#vision">Vision</a>
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#layers">Layers</a>

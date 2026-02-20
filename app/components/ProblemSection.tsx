@@ -26,9 +26,9 @@ const CARDS: ProblemCard[] = [
 
 export default function ProblemSection() {
   return (
-    <Section tone="s1" className="py-20" id="problem">
+    <Section className="py-20" id="problem">
       <Container>
-        <OnView>    
+        <OnView>
           <h2 className="font-display mt-4 text-5xl md:text-6xl tracking-tight">
             The Problem
           </h2>
@@ -39,7 +39,8 @@ export default function ProblemSection() {
 
           <div className="problem-grid mt-10">
             {CARDS.map((c) => (
-              <div key={c.title} className="problem-card">
+              <div key={c.title} className="problem-card card-surface">
+
                 {/* Make it focusable for keyboard flip */}
                 <a
                   href="#"
