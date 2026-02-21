@@ -8,10 +8,8 @@ export default function Card({ children, className = "", hover = true }: CardPro
   return (
     <div
       className={[
-        "rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] shadow-[var(--shadow-sm)]",
-        hover
-          ? "transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] hover:border-white/15"
-          : "",
+        "card-surface rounded-2xl",
+        hover ? "transition hover:-translate-y-0.5" : "",
         className,
       ].join(" ")}
     >

@@ -39,23 +39,22 @@ export default function ProblemSection() {
 
           <div className="problem-grid mt-10">
             {CARDS.map((c) => (
-              <div key={c.title} className="problem-card card-surface">
-
-                {/* Make it focusable for keyboard flip */}
+              <div key={c.title} className="problem-card">
                 <a
                   href="#"
-                  className="absolute inset-0 z-[1] rounded-[24px] outline-none"
+                  className="absolute inset-0 z-[3] rounded-[24px] outline-none"
                   aria-label={`${c.title} details`}
                   onClick={(e) => e.preventDefault()}
                 />
+
                 <div className="problem-card-inner">
                   {/* FRONT */}
-                  <div className="problem-card-face problem-card-front">
+                  <div className="problem-card-face problem-card-front card-surface-dark">
                     <h3 className="problem-title">{c.title}</h3>
                   </div>
 
                   {/* BACK */}
-                  <div className="problem-card-face problem-card-back">
+                  <div className="problem-card-face problem-card-back card-surface-dark">
                     <h3 className="problem-title">{c.title}</h3>
                     <p className="problem-body">{c.body}</p>
                   </div>
@@ -72,3 +71,4 @@ export default function ProblemSection() {
     </Section>
   );
 }
+
