@@ -152,7 +152,7 @@ export default function EmergenceEngineSection() {
 
                 const alpha = 1 - p.life / p.max;
 
-                ctx.fillStyle = `rgba(96,165,250,${alpha * 0.9})`;
+                ctx.fillStyle = `rgba(29,78,216,${alpha * 1})`; // blue-700
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
                 ctx.fill();

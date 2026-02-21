@@ -81,8 +81,8 @@ export default function AutonomousWorkersSection() {
         id: "synthesizer",
         title: "Synthesizer",
         subtitle: "Cross-domain fusion",
-        color: "rgba(96,165,250,1)",
-        glow: "rgba(96,165,250,0.35)",
+        color: "rgba(34,211,238,1)",
+        glow:  "rgba(34,211,238,0.32)",
       },
       {
         id: "anticipator",
@@ -266,7 +266,7 @@ export default function AutonomousWorkersSection() {
 
       // Spawn impulses at a steady rate
       // ---- KNOB: spawnIntervalMs ----
-      const spawnIntervalMs = 180;
+      const spawnIntervalMs = 420;
       if (tms - lastSpawn > spawnIntervalMs) {
         lastSpawn = tms;
         // ---- KNOB: impulsesPerTick ----

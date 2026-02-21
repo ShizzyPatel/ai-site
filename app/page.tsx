@@ -9,6 +9,7 @@ import JasuBrainSection from "./components/JasuBrain";
 import EmergenceEngineSection from "./components/EmergenceEngineSection";
 import AutonomousWorkersSection from "./components/AutonomousWorkersSection";
 import IndustriesMarketSection from "./components/IndustriesMarketSection";
+import InteractiveProductRealitySection from "./components/InteractiveProductRealitySection";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
     <main>
       <Hero />
       <ProblemSection />
+      <InteractiveProductRealitySection />
       <VisionSection />
       <LayersSection />
       <JasuBrainSection />
