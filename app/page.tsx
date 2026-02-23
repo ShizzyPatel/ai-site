@@ -10,6 +10,8 @@ import EmergenceEngineSection from "./components/EmergenceEngineSection";
 import AutonomousWorkersSection from "./components/AutonomousWorkersSection";
 import IndustriesMarketSection from "./components/IndustriesMarketSection";
 import InteractiveProductRealitySection from "./components/InteractiveProductRealitySection";
+import PathsToMarketSection from "./components/PathsToMarketSection";
+import CompetitiveComparisonSection from "./components/CompetitiveComparisonSection";
 
 
 
@@ -25,6 +27,8 @@ export default function Home() {
       <EmergenceEngineSection />
       <IndustriesMarketSection />
       <AutonomousWorkersSection />
+      <PathsToMarketSection />
+      <CompetitiveComparisonSection />
 
     </main>
   );
