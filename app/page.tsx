@@ -8,7 +8,6 @@ import LayersSection from "./components/LayersSection";
 import JasuBrainSection from "./components/JasuBrain";
 import EmergenceEngineSection from "./components/EmergenceEngineSection";
 import AutonomousWorkersSection from "./components/AutonomousWorkersSection";
-import IndustriesMarketSection from "./components/IndustriesMarketSection";
 import InteractiveProductRealitySection from "./components/InteractiveProductRealitySection";
 import PathsToMarketSection from "./components/PathsToMarketSection";
 import CompetitiveComparisonSection from "./components/CompetitiveComparisonSection";
@@ -26,7 +25,6 @@ export default function Home() {
       <LayersSection />
       <JasuBrainSection />
       <EmergenceEngineSection />
-      <IndustriesMarketSection />
       <AutonomousWorkersSection />
       <PathsToMarketSection />
       <CompetitiveComparisonSection />

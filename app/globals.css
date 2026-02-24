@@ -393,3 +393,14 @@ body {
 .no-css-lift:hover {
   transform: none !important;
 } 
+
+@keyframes megaIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+} 

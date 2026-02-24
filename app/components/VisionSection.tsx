@@ -89,7 +89,7 @@ export default function VisionSection() {
   );
 
   return (
-    <Section className="py-24">
+    <Section className="py-24" id ="vision">
       <div className="mx-auto max-w-6xl">
         {/* Section label + Title */}
         <div className="mb-10">
