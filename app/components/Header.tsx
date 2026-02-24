@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Container from "./Container";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,21 +24,27 @@ export default function Header() {
           : "bg-muted",
       ].join(" ")}
     >
-      <Container className="flex h-20 md:h-25 items-center justify-between">
+      <Container className="flex h-20 items-center justify-between">
+        {/* Left: Logo */}
         <div className="flex items-center">
-          <div className="flex items-center justify-center ">
+          <Link
+            href="/"
+            className="flex items-center justify-center transition-opacity hover:opacity-80"
+            aria-label="AI UNITE Home"
+          >
             <Image
               src="/images/logo/logo.png"
               alt="AI UNITE Logo"
               width={300}
               height={300}
               priority
-              className="h-20 w-20 object-contain"
+              className="h-16 w-16 md:h-18 md:w-18 object-contain"
             />
-          </div>
+          </Link>
         </div>
 
-        <nav className="hidden items-center gap-6 text-sm text-gold md:flex">
+        {/* Center: Nav */}
+        <nav className="hidden items-center gap-6 text-sm md:flex text-[rgb(var(--text))]">
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#problem">Problem</a>
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#vision">Vision</a>
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#layers">Layers</a>
@@ -45,8 +52,10 @@ export default function Header() {
           <a className="transition-colors hover:text-[rgb(var(--gold))]" href="#contact">Contact</a>
         </nav>
 
-
-        <Button className="px-5 py-2 text-xs">Get In Touch</Button>
+        {/* Right: CTA */}
+        <div className="flex items-center">
+          <Button className="px-5 py-2 text-xs">Get In Touch</Button>
+        </div>
       </Container>
     </header>
   );

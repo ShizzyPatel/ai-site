@@ -12,7 +12,8 @@ import IndustriesMarketSection from "./components/IndustriesMarketSection";
 import InteractiveProductRealitySection from "./components/InteractiveProductRealitySection";
 import PathsToMarketSection from "./components/PathsToMarketSection";
 import CompetitiveComparisonSection from "./components/CompetitiveComparisonSection";
-
+import TeamSection from "./components/TeamSection";
+import ContactSection from "./components/ContactSection";
 
 
 export default function Home() {
@@ -29,6 +30,8 @@ export default function Home() {
       <AutonomousWorkersSection />
       <PathsToMarketSection />
       <CompetitiveComparisonSection />
+      <TeamSection /> 
+      <ContactSection />
 
     </main>
   );
