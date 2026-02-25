@@ -58,8 +58,8 @@ export default function Header() {
           />
 
           <MegaMenu
-            label="Solutions"
-            description="Deploy cognitive intelligence across environments — from enterprise platforms to everyday workflows."
+            label="Built For"
+            description="Cognitive intelligence built for every scale — from enterprise infrastructure to your family's daily life"
             sections={[
               {
                 title: "By Audience",
