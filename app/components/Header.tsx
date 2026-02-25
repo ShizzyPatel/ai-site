@@ -25,9 +25,9 @@ export default function Header() {
           : "bg-muted",
       ].join(" ")}
     >
-      <Container className="flex h-20 items-center justify-between">
+      <Container className="flex h-16 items-center">
         {/* Left: Logo */}
-        <div className="flex items-center">
+        <div className="flex w-48 items-center">
           <Link
             href="/"
             className="flex items-center justify-center transition-opacity hover:opacity-80"
@@ -45,9 +45,9 @@ export default function Header() {
         </div>
 
         {/* Center: Nav */}
-        <nav className="hidden items-center gap-3 md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-4 md:flex">
           <MegaMenu
-            label="Our Approach"
+            label="The Intelligence Stack"
             description="The architecture behind cognitive intelligence: why fragmentation exists, and how we unify reasoning, memory, and learning."
             links={[
               { label: "Problem", href: "/#problem", desc: "Why AI is powerful but structurally incomplete." },
@@ -60,38 +60,57 @@ export default function Header() {
           <MegaMenu
             label="Solutions"
             description="Deploy cognitive intelligence across environments — from enterprise platforms to everyday workflows."
-            links={[
-              { label: "Enterprise", href: "/solutions/enterprise", desc: "SSO, governance, SLAs, and multi-tenant brains." },
-              { label: "SMB", href: "/solutions/smb", desc: "Fast onboarding and immediate operational lift." },
-              { label: "Family", href: "/solutions/family", desc: "Personal brains that remember, guide, and support." },
+            sections={[
+              {
+                title: "By Audience",
+                links: [
+                  { label: "Enterprise", href: "/solutions/enterprise", desc: "SSO, governance, SLAs, and multi-tenant brains." },
+                  { label: "SMB", href: "/solutions/smb", desc: "Fast onboarding and immediate operational lift." },
+                  { label: "Family", href: "/solutions/family", desc: "Personal brains that remember, guide, and support." },
+                ],
+              },
+              {
+                title: "By Access",
+                links: [
+                  { label: "Platform", href: "/solutions/platform", desc: "Full cognitive intelligence dashboard." },
+                  { label: "API", href: "/solutions/api", desc: "Embed intelligence into any application." },
+                  { label: "Extension", href: "/solutions/extension", desc: "AI Unite intelligence on any webpage. Always there." },
+                ],
+              },
             ]}
           />
 
+           <MegaMenu
+            label="The Lab"
+            description="What powers the platform - patents, architecture, and validation."
+            links={[
+              { label: "Patent Portfolio", href: "/lab/patents", desc: "Four provisional patents protecting the cognitive layer." },
+              { label: "Use Cases", href: "/lab/use-cases", desc: "Real queries. Real synthesis. Real results." },
+              { label: "How It Thinks", href: "/lab/how-it-thinks", desc: "Inside the Emergence Engine JASU and autonomous learning." },
+              { label: "Security & Privacy", href: "/lab/security-privacy", desc: "Federated learning. Complete data isolation. Zero trust" },
+            ]}
+          />
+          <MegaMenu
+            label="About Us"
+            description="The team, the thesis, and why this company exists."
+            links={[
+              { label: "The Story", href: "/about/story", desc: "Why AI fragmentation demanded a new layer." },
+              { label: "Team & Advisors", href: "/about/team-advisors", desc: "Built by operators. Guided by MacAurthur fellows and AI researchers." },
+              { label: "Press", href: "/about/press", desc: "$425M - $875M IP valuation" },
+            ]}
+          />
           <Link
-            href="/insights"
+            href="/pricing"
             className="rounded-full px-3 py-2 text-sm text-[rgb(var(--text))] transition-colors hover:text-[rgb(var(--gold))]"
           >
-            Insights
+            Pricing
           </Link>
 
-          <Link
-            href="/about"
-            className="rounded-full px-3 py-2 text-sm text-[rgb(var(--text))] transition-colors hover:text-[rgb(var(--gold))]"
-          >
-            About Us
-          </Link>
-
-          <a
-            href="/#contact"
-            className="rounded-full px-3 py-2 text-sm text-[rgb(var(--text))] transition-colors hover:text-[rgb(var(--gold))]"
-          >
-            Contact
-          </a>
         </nav>
 
         {/* Right: CTA */}
-        <div className="flex items-center">
-          <Button className="px-5 py-2 text-xs">Get In Touch</Button>
+        <div className="flex w-48 items-center justify-end">
+          <Button className="px-5 py-2 text-xs">Contact</Button>
         </div>
       </Container>
     </header>
