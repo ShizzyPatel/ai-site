@@ -37,23 +37,23 @@ function MobileAnchors() {
 export default function SolutionsPage() {
   return (
     <main className="pb-24">
-      {/* Page Hero */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-14 md:pt-20">
-        <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
-          SOLUTIONS
+      <SolutionsLayout mobileNav={<MobileAnchors />} sidebar={<SolutionsSidebar items={NAV} />}>
+        {/* Page Hero — moved INSIDE layout so it gets the right-padding reserve */}
+        <div className="pt-14 md:pt-20">
+          <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
+            SOLUTIONS
+          </div>
+
+          <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
+            Deploy cognitive intelligence across environments.
+          </h1>
+
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[rgb(var(--muted))]">
+            A single intelligence layer — delivered as governed enterprise infrastructure, lightweight workflows,
+            and everyday support. Explore each environment below.
+          </p>
         </div>
 
-        <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
-          Deploy cognitive intelligence across environments.
-        </h1>
-
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[rgb(var(--muted))]">
-          A single intelligence layer — delivered as governed enterprise infrastructure, lightweight workflows,
-          and everyday support. Explore each environment below.
-        </p>
-      </div>
-
-      <SolutionsLayout mobileNav={<MobileAnchors />} sidebar={<SolutionsSidebar items={NAV} />}>
         <SolutionSection
           id="enterprise"
           eyebrow="BY AUDIENCE"
@@ -103,13 +103,12 @@ export default function SolutionsPage() {
                   </p>
 
                   <ul className="mt-4 space-y-2 text-sm text-[rgb(var(--muted))]">
-                    {[
-                      "Placeholder bullet one",
-                      "Placeholder bullet two",
-                      "Placeholder bullet three",
-                    ].map((b) => (
+                    {["Placeholder bullet one", "Placeholder bullet two", "Placeholder bullet three"].map((b) => (
                       <li key={b} className="flex gap-3">
-                        <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-[rgb(var(--primary))]" aria-hidden />
+                        <span
+                          className="mt-[7px] h-1.5 w-1.5 rounded-full bg-[rgb(var(--primary))]"
+                          aria-hidden
+                        />
                         {b}
                       </li>
                     ))}
@@ -227,4 +226,4 @@ export default function SolutionsPage() {
       </SolutionsLayout>
     </main>
   );
-}
+}   

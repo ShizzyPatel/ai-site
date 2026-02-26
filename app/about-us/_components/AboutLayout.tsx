@@ -2,18 +2,19 @@
 
 import React from "react";
 
-type SolutionsLayoutProps = {
+type AboutLayoutProps = {
   children: React.ReactNode;
   sidebar: React.ReactNode;
   mobileNav: React.ReactNode;
 };
 
-export default function SolutionsLayout({ children, sidebar, mobileNav }: SolutionsLayoutProps) {
+export default function AboutLayout({ children, sidebar, mobileNav }: AboutLayoutProps) {
   return (
     <div className="relative">
+      {/* Mobile nav */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">{mobileNav}</div>
 
-      {/* Content: reserve sidebar space */}
+      {/* Content: reserve fixed sidebar space */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 lg:pr-[360px]">
         {children}
       </div>

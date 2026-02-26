@@ -80,23 +80,24 @@ export default function Header() {
             ]}
           />
 
-           <MegaMenu
+          <MegaMenu
             label="The Lab"
             description="What powers the platform - patents, architecture, and validation."
             links={[
-              { label: "Patent Portfolio", href: "/lab/patents", desc: "Four provisional patents protecting the cognitive layer." },
-              { label: "Use Cases", href: "/lab/use-cases", desc: "Real queries. Real synthesis. Real results." },
-              { label: "How It Thinks", href: "/lab/how-it-thinks", desc: "Inside the Emergence Engine JASU and autonomous learning." },
-              { label: "Security & Privacy", href: "/lab/security-privacy", desc: "Federated learning. Complete data isolation. Zero trust" },
+              { label: "Patent Portfolio", href: "/lab#patent-portfolio", desc: "Four provisional patents protecting the cognitive layer." },
+              { label: "Use Cases", href: "/lab#use-cases", desc: "Real queries. Real synthesis. Real results." },
+              { label: "How It Thinks", href: "/lab#how-it-thinks", desc: "Inside the Emergence Engine JASU and autonomous learning." },
+              { label: "Security & Privacy", href: "/lab#security-privacy", desc: "Federated learning. Complete data isolation. Zero trust" },
             ]}
           />
           <MegaMenu
             label="About Us"
             description="The team, the thesis, and why this company exists."
             links={[
-              { label: "The Story", href: "/about/story", desc: "Why AI fragmentation demanded a new layer." },
-              { label: "Team & Advisors", href: "/about/team-advisors", desc: "Built by operators. Guided by MacAurthur fellows and AI researchers." },
-              { label: "Press", href: "/about/press", desc: "$425M - $875M IP valuation" },
+              { label: "The Story", href: "/about-us#the-story", desc: "Why AI fragmentation demanded a new layer." },
+              { label: "Principles", href: "/about-us#principles", desc: "How we build coherent, governable intelligence." },
+              { label: "Team & Advisors", href: "/about-us#team-advisors", desc: "Built by operators. Guided by fellows and applied AI researchers." },
+              { label: "Press", href: "/about-us#press", desc: "$425M - $875M IP valuation" },
             ]}
           />
           <Link
