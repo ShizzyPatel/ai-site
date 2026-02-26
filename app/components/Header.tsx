@@ -64,17 +64,17 @@ export default function Header() {
               {
                 title: "By Audience",
                 links: [
-                  { label: "Enterprise", href: "/solutions/enterprise", desc: "SSO, governance, SLAs, and multi-tenant brains." },
-                  { label: "SMB", href: "/solutions/smb", desc: "Fast onboarding and immediate operational lift." },
-                  { label: "Family", href: "/solutions/family", desc: "Personal brains that remember, guide, and support." },
+                  { label: "Enterprise", href: "/solutions#enterprise", desc: "SSO, governance, SLAs, and multi-tenant brains." },
+                  { label: "SMB", href: "/solutions#smb", desc: "Fast onboarding and immediate operational lift." },
+                  { label: "Family", href: "/solutions#family", desc: "Personal brains that remember, guide, and support." },
                 ],
               },
               {
                 title: "By Access",
                 links: [
-                  { label: "Platform", href: "/solutions/platform", desc: "Full cognitive intelligence dashboard." },
-                  { label: "API", href: "/solutions/api", desc: "Embed intelligence into any application." },
-                  { label: "Extension", href: "/solutions/extension", desc: "AI Unite intelligence on any webpage. Always there." },
+                  { label: "Platform", href: "/solutions#platform", desc: "Full cognitive intelligence dashboard." },
+                  { label: "API", href: "/solutions#api", desc: "Embed intelligence into any application." },
+                  { label: "Extension", href: "/solutions#extension", desc: "AI Unite intelligence on any webpage. Always there." },
                 ],
               },
             ]}
@@ -110,7 +110,7 @@ export default function Header() {
 
         {/* Right: CTA */}
         <div className="flex w-48 items-center justify-end">
-          <Button className="px-5 py-2 text-xs">Contact</Button>
+          <Button className="px-5 py-2 text-sm">Contact</Button>
         </div>
       </Container>
     </header>
