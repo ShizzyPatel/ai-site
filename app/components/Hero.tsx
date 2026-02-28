@@ -67,12 +67,13 @@ export default function Hero() {
 
                     {/* Stats row (count up on scroll into view) */}
                     <div className="mt-10 grid grid-cols-2 gap-y-8 gap-x-10 sm:grid-cols-5 border-t border-[rgb(var(--border))] pt-8">
-                        <CountUpStat value={15} label="AI Providers" suffix="+" format="int" />
-                        <CountUpStat value={86000} label="Knowledge Nodes" suffix="+" format="k-int" />
-                        <CountUpStat value={8} label="Patents Filed" format="int" />
-                        <CountUpStat value={5} label="Response Time" prefix="<" suffix="s" format="int" />
+                        <CountUpStat value={15} label="Customized AI Providers" suffix="+" format="int" />
+                        <CountUpStat value={209} label="Corporate Analytics" suffix="+" format="int" />
+                        <CountUpStat value={6} label="Cognitive Workers" format="int" />
+                        
 
                         {/* Static — no count-up, but SAME style */}
+                        <CountUpStat text="100" label="Data Isolation" suffix="%" format="int" />
                         <CountUpStat text="24/7" label="Autonomous Learning" />
                     </div>
 

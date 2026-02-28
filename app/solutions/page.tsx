@@ -80,7 +80,7 @@ export default function SolutionsPage() {
           subtitle="Fast onboarding and immediate operational lift — without enterprise overhead."
           chips={["Rapid onboarding", "Ops lift", "Low friction", "Team memory"]}
           bullets={[
-            "Turn messy business knowledge into a usable decision layer.",
+            "Turn messy business knowledge into instant, usable answers",
             "Reduce repeated work: proposals, customer context, internal SOPs.",
             "Keep continuity when teams change — without heavy tooling.",
           ]}
@@ -149,9 +149,9 @@ export default function SolutionsPage() {
         </SolutionSection>
 
         <SolutionSection
-          id="family"
+          id="academia"
           eyebrow="BY AUDIENCE"
-          title="Family"
+          title="Academia"
           subtitle="Personal brains that remember, guide, and support — grounded in privacy and continuity."
           chips={["Memory", "Guidance", "Support", "Privacy-first"]}
           bullets={[
@@ -160,9 +160,9 @@ export default function SolutionsPage() {
             "Designed for everyday use without enterprise complexity.",
           ]}
         >
-          <DeepDive title="See Family detail" summary="Expand for examples, flows, and client visuals.">
+          <DeepDive title="See Academia detail" summary="Expand for examples, flows, and client visuals.">
             <div className="rounded-2xl border border-[rgb(var(--border))]/70 bg-white/5 p-6 text-sm text-[rgb(var(--muted))]">
-              Placeholder: Family graphics / animations go here.
+              Placeholder: Academia graphics / animations go here.
             </div>
           </DeepDive>
         </SolutionSection>
@@ -176,7 +176,7 @@ export default function SolutionsPage() {
           bullets={[
             "Deploy intelligence as a managed system, not a chat window.",
             "Operate memory, access, and reasoning policies centrally.",
-            "Instrument usage and outcomes over time.",
+            "Track usage, performance, and outcomes over time.",
           ]}
         >
           <DeepDive title="See Platform detail" summary="Expand for architecture screens and dashboards.">

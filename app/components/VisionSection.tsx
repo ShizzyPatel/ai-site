@@ -90,14 +90,7 @@ export default function VisionSection() {
 
   return (
     <Section className="py-24" id ="vision">
-      <div className="mx-auto max-w-6xl">
-        {/* Section label + Title */}
-        <div className="mb-10">
-          <h2 className="mt-4 font-display text-6xl leading-[1.02] tracking-tight text-[rgb(var(--text))]">
-            The Vision
-          </h2>
-        </div>
-
+      <div className="mx-auto max-w-6xl">     
         {/* Main vision block */}
         <div className="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--bg))]/25 p-10 backdrop-blur">
           <div className="text-center">
@@ -108,8 +101,7 @@ export default function VisionSection() {
             <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-[rgb(var(--text))]/80">
               AI UNITE is vendor-neutral intelligence infrastructure.
               <br />
-              We don&apos;t compete with AI providers — we make them all work
-              better.
+              We&apos;re not building another AI. We are building the <span className="text-[rgb(var(--primary))] font-medium">Cognitive Intelligence Layer</span> for the AI Ecosystem 
             </p>
           </div>
 

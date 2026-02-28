@@ -43,7 +43,7 @@ const layers: Layer[] = [
   },
   {
     n: "06",
-    title: "Autonomous Learning (AL 2.0)",
+    title: "Autonomous Learning",
     desc: "19 workers, 24/7 intelligence growth",
     accent: "text-blue-400",
   },

@@ -59,42 +59,42 @@ export default function AutonomousWorkersSection() {
       {
         id: "explorer",
         title: "Explorer",
-        subtitle: "Pattern discovery",
+        subtitle: "Finds patterns your team would never look for",
         color: "rgba(96,165,250,1)",
         glow: "rgba(96,165,250,0.35)",
       },
       {
         id: "validator",
         title: "Validator",
-        subtitle: "Knowledge validation",
+        subtitle: "Verifies every insight before you see it",
         color: "rgba(52,211,153,1)",
         glow: "rgba(52,211,153,0.32)",
       },
       {
         id: "hypothesis",
         title: "Hypothesis",
-        subtitle: "Theory generation",
+        subtitle: "Generates theories from your organization's data",
         color: "rgba(167,139,250,1)",
         glow: "rgba(167,139,250,0.32)",
       },
       {
         id: "synthesizer",
         title: "Synthesizer",
-        subtitle: "Cross-domain fusion",
+        subtitle: "Connects insights across departments",
         color: "rgba(34,211,238,1)",
         glow:  "rgba(34,211,238,0.32)",
       },
       {
         id: "anticipator",
         title: "Anticipator",
-        subtitle: "Predictive intelligence",
+        subtitle: "Predicts what your team will need next",
         color: "rgba(245,158,11,1)",
         glow: "rgba(245,158,11,0.33)",
       },
       {
         id: "dreamer",
         title: "Dreamer",
-        subtitle: "23 modes, 7 tiers",
+        subtitle: "Creative leaps — connections no one asked for",
         color: "rgba(248,113,113,1)",
         glow: "rgba(248,113,113,0.30)",
       },
@@ -104,10 +104,10 @@ export default function AutonomousWorkersSection() {
 
   const stats: Stat[] = useMemo(
     () => [
-      { label: "Knowledge Nodes", value: 86971, suffix: "+", decimals: 0 },
-      { label: "Active Workers", value: 19, decimals: 0 },
-      { label: "Dreamer Modes", value: 23, decimals: 0 },
-      { label: "Worker Success Rate", value: 100, suffix: "%", decimals: 0 },
+      { label: "Insights Learned", value: 86971, suffix: "+", decimals: 0 },
+      { label: "Workers, Zero Downtime", value: 19, decimals: 0 },
+      { label: "Cognitive Specializations", value: 6, decimals: 0 },
+      { label: "Autonomous", value: 100, suffix: "%", decimals: 0 },
     ],
     []
   );

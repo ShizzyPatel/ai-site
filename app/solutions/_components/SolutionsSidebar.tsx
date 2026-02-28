@@ -84,10 +84,6 @@ export default function SolutionsSidebar({ items }: SolutionsSidebarProps) {
           );
         })}
       </nav>
-
-      <div className="mt-8 text-xs text-[rgb(var(--muted))] leading-relaxed">
-        Jump between environments and access modes. Each section contains a brief summary plus an optional deep dive.
-      </div>
     </aside>
   );
 }

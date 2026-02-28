@@ -40,25 +40,44 @@ export default function LabPage() {
           <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
             Proof, architecture, and how the system thinks.
           </h1>
-
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[rgb(var(--muted))]">
-            This page will stay text-first and structured. We’ll replace placeholders once approved.
-          </p>
         </div>
 
         {/* SECTIONS */}
         <SectionBlock
-          id="patent-portfolio"
+          id="how-it-thinks"
           eyebrow="THE LAB"
-          title="Patent Portfolio"
-          subtitle="Provisional patents protecting the cognitive layer."
+          title="How It Thinks"
+          subtitle="Inside the Emergence Engine, JASU, and autonomous learning."
           bullets={[
-            "Placeholder: scope of filings and what they protect.",
-            "Placeholder: claims focus (memory, orchestration, governance, etc.).",
-            "Placeholder: how this differentiates from generic AI wrappers.",
+            <>
+              <span className="font-semibold text-[rgb(var(--text))]">
+                Reasoning + memory + feedback loops as a system.
+              </span>{"  - "}
+              JASU isn’t a model — it’s a 4-layer brain architecture working in parallel:
+              a Reptilian foundation for survival and recovery, a Limbic layer for learning and memory,
+              a Neocortex for reasoning and domain intelligence, and a UserBrain that personalizes everything.
+              Every query activates all four layers simultaneously.
+            </>,
+
+            <>
+              <span className="font-semibold text-[rgb(var(--text))]">
+                Orchestration layer
+              </span>{" - "}
+              A single query triggers cognitive mode selection (retrieval, exploration, synthesis, or insight),
+              intelligent routing across 15+ AI models, parallel execution with diminishing-returns detection,
+              contradiction identification, cross-domain bridge discovery, and synthesis into one unified output.
+              The system then records what it learned.
+            </>,
+
+            <>
+              <span className="font-semibold text-[rgb(var(--text))]">
+                Continuous alignment.
+              </span>{"  - "}
+              Each output improves future performance through feedback loops,
+              trace logging, and reinforcement of successful reasoning paths.
+            </>,
           ]}
         />
-
         <SectionBlock
           id="use-cases"
           eyebrow="THE LAB"
@@ -70,19 +89,6 @@ export default function LabPage() {
             "Placeholder: operational continuity and knowledge retention.",
           ]}
         />
-
-        <SectionBlock
-          id="how-it-thinks"
-          eyebrow="THE LAB"
-          title="How It Thinks"
-          subtitle="Inside the Emergence Engine, JASU, and autonomous learning."
-          bullets={[
-            "Placeholder: reasoning + memory + feedback loops as a system.",
-            "Placeholder: orchestration layer (route, synthesize, learn).",
-            "Placeholder: how outputs become more aligned over time.",
-          ]}
-        />
-
         <SectionBlock
           id="security-privacy"
           eyebrow="THE LAB"
@@ -92,6 +98,17 @@ export default function LabPage() {
             "Placeholder: isolation boundaries and tenant separation.",
             "Placeholder: governance controls and auditability model.",
             "Placeholder: privacy stance and data-handling posture.",
+          ]}
+        />
+        <SectionBlock
+          id="patent-portfolio"
+          eyebrow="THE LAB"
+          title="Patent Portfolio"
+          subtitle="Provisional patents protecting the cognitive layer."
+          bullets={[
+            "Placeholder: scope of filings and what they protect.",
+            "Placeholder: claims focus (memory, orchestration, governance, etc.).",
+            "Placeholder: how this differentiates from generic AI wrappers.",
           ]}
         />
       </LabLayout>

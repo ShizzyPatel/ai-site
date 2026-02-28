@@ -66,7 +66,7 @@ export default function Header() {
                 links: [
                   { label: "Enterprise", href: "/solutions#enterprise", desc: "SSO, governance, SLAs, and multi-tenant brains." },
                   { label: "SMB", href: "/solutions#smb", desc: "Fast onboarding and immediate operational lift." },
-                  { label: "Family", href: "/solutions#family", desc: "Personal brains that remember, guide, and support." },
+                  { label: "Academia", href: "/solutions#academia", desc: "Personal brains that remember, guide, and support." },
                 ],
               },
               {
@@ -84,10 +84,10 @@ export default function Header() {
             label="The Lab"
             description="What powers the platform - patents, architecture, and validation."
             links={[
-              { label: "Patent Portfolio", href: "/lab#patent-portfolio", desc: "Four provisional patents protecting the cognitive layer." },
-              { label: "Use Cases", href: "/lab#use-cases", desc: "Real queries. Real synthesis. Real results." },
               { label: "How It Thinks", href: "/lab#how-it-thinks", desc: "Inside the Emergence Engine JASU and autonomous learning." },
+              { label: "Use Cases", href: "/lab#use-cases", desc: "Real queries. Real synthesis. Real results." },
               { label: "Security & Privacy", href: "/lab#security-privacy", desc: "Federated learning. Complete data isolation. Zero trust" },
+              { label: "Patent Portfolio", href: "/lab#patent-portfolio", desc: "Four provisional patents protecting the cognitive layer." },
             ]}
           />
           <MegaMenu

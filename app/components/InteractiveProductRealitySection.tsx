@@ -85,8 +85,11 @@ export default function InteractiveProductRealitySection() {
               </h2>
 
               <p className="mt-5 max-w-2xl text-lg text-[rgb(var(--muted))]">
-                AI UNITE routes a query to specialized “brains,” detects contradictions, and produces a single
-                synthesis spine you can audit.
+                AI UNITE analyzes your query, selects the right cognitive approach, routes it across multiple AI models in parallel, detects contradictions,
+                applies what it's learned about your business, and synthesizes one unified answer you can audit{" "}
+                <span className="text-[rgb(var(--primary))] font-medium">
+                  — then gets smarter for next time.
+                </span>
               </p>
 
               {/* Stepper */}
@@ -99,12 +102,33 @@ export default function InteractiveProductRealitySection() {
                       key={s.key}
                       onClick={() => setStep(s.key)}
                       className={[
-                        "rounded-full border px-4 py-2 text-sm transition",
+                        "rounded-full px-5 py-2.5 text-[15px] font-semibold",
+                        "transition-all duration-200",
+                        "border",
+                        "cursor-pointer",
+
+                        // base: subtle surface so it doesn't look flat
+                        "bg-white/55 backdrop-blur",
+                        "shadow-[0_10px_22px_-18px_rgba(15,23,42,0.35)]",
+
+                        // hover: obvious but still classy
+                        !active
+                          ? "hover:bg-white/80 hover:border-[rgba(var(--primary),0.30)] hover:shadow-[0_16px_28px_-22px_rgba(15,23,42,0.45)] hover:-translate-y-[1px]"
+                          : "",
+
+                        // border default
+                        !active ? "border-[rgba(var(--border),0.55)]" : "",
+
+                        // ACTIVE: clean “selected” state (soft blue fill, not solid)
                         active
-                          ? "border-[rgba(var(--primary),0.55)] bg-[rgba(var(--primary),0.12)] text-[rgb(var(--text))]"
-                          : done
-                            ? "border-[rgba(var(--border),0.7)] bg-white/[0.03] text-[rgb(var(--text))]/85 hover:bg-white/[0.05]"
-                            : "border-[rgba(var(--border),0.55)] bg-transparent text-[rgb(var(--muted))] hover:bg-white/[0.04]",
+                          ? "bg-[rgba(var(--primary),0.16)] border-[rgba(var(--primary),0.55)] text-[rgb(var(--text))] shadow-[0_16px_28px_-22px_rgba(59,130,246,0.35)]"
+                          : "text-[rgb(var(--text))]",
+
+                        // press
+                        "active:translate-y-0 active:shadow-[0_12px_22px_-20px_rgba(15,23,42,0.40)]",
+
+                        // focus
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--primary),0.25)] focus-visible:ring-offset-2 focus-visible:ring-offset-[rgb(var(--bg))]",
                       ].join(" ")}
                     >
                       {s.label}
@@ -131,7 +155,7 @@ export default function InteractiveProductRealitySection() {
                 </button>
 
                 <div className="ml-auto text-xs text-[rgb(var(--muted))]">
-                  This is a simulation of the workflow UI.
+                  Click through to see the workflow UI simulation.
                 </div>
               </div>
 

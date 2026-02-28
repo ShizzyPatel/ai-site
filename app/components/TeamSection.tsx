@@ -94,7 +94,7 @@ export default function TeamSection() {
       title: "Founder & CEO",
       initials: "SP",
       description:
-        "Serial entrepreneur. SaaS, SMB consulting globally, team builder. Takes complex problems and makes them clear, actionable, and scalable.",
+        "Serial entrepreneur. Built and scaled SaaS platforms globally. Now building the intelligence layer for AI.",
       // imageSrc: "/team/soob.jpg",
       // linkedinUrl: "https://linkedin.com/in/....",
     },

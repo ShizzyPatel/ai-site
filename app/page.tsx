@@ -26,8 +26,6 @@ export default function Home() {
       <JasuBrainSection />
       <EmergenceEngineSection />
       <AutonomousWorkersSection />
-      <PathsToMarketSection />
-      <CompetitiveComparisonSection />
       <TeamSection /> 
       <ContactSection />
 

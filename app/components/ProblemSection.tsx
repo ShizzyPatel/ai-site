@@ -15,11 +15,11 @@ const CARDS: ProblemCard[] = [
     body: "ChatGPT doesn't talk to Claude. Claude doesn't talk to Gemini. No one synthesizes them.",
   },
   {
-    title: "Aggregation ≠ Intelligence",
+    title: "More AIs ≠ Smarter Answers",
     body: "Comparing AI outputs side-by-side is not intelligence. Real intelligence is SYNTHESIS.",
   },
   {
-    title: "No AI Learns YOU",
+    title: "No AI Learns Your Business",
     body: "Every conversation starts from zero. No AI remembers your preferences, patterns, or context across sessions.",
   },
 ];
@@ -33,7 +33,7 @@ export default function ProblemSection() {
             The Problem
           </h2>
 
-          <p className="mt-6 italic text-[rgb(var(--gold))]">
+          <p className="mt-6 italic text-xl text-[rgb(var(--gold))]">
             Headline: &quot;$500B+ AI market. Zero Intelligence Layer.&quot;
           </p>
 
@@ -44,7 +44,7 @@ export default function ProblemSection() {
                   href="#"
                   className="absolute inset-0 z-[3] rounded-[24px] outline-none"
                   aria-label={`${c.title} details`}
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()} 
                 />
 
                 <div className="problem-card-inner">
@@ -63,7 +63,7 @@ export default function ProblemSection() {
             ))}
           </div>
 
-          <p className="mt-10 italic text-[rgb(var(--muted))]">
+          <p className="mt-12 italic text-xl md:text-2xl text-[rgb(var(--muted))]">
             &quot;Businesses need intelligence, not more chatbots.&quot;
           </p>
         </OnView>

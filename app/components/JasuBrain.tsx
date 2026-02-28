@@ -27,8 +27,8 @@ export default function JasuBrainSection() {
         key: "userbrain",
         title: "USERBRAIN",
         subtitle: "Personal Layer",
-        mid: "DOESN'T EXIST IN NATURE",
-        right: "Learns YOU — preferences, patterns, history. Your Twin Brain.",
+        mid: "Doesn't Exist in Nature",
+        right: "Learns every user — preferences, patterns, history. A Twin Brain for everyone on your team.",
         color: "rgb(var(--gold))",
         glow: "rgba(245, 158, 11, 0.55)", // darker/stronger particles
       },
@@ -37,7 +37,7 @@ export default function JasuBrainSection() {
         title: "NEOCORTEX",
         subtitle: "Intelligence Layer",
         mid: "Reasoning & Logic",
-        right: "8+ Domain Brains, Dreamer Worker, cross-domain synthesis",
+        right: "Domain-specialized reasoning, cross-domain synthesis, cognitive pattern discovery",
         color: "rgba(96, 165, 250, 1)",
         glow: "rgba(96, 165, 250, 0.48)", // darker/stronger particles
       },
@@ -45,8 +45,8 @@ export default function JasuBrainSection() {
         key: "limbic",
         title: "LIMBIC SYSTEM",
         subtitle: "Learning Layer",
-        mid: "Emotion & Memory",
-        right: "19 Cognitive Workers, 86K+ knowledge nodes, AL 2.0",
+        mid: "Learning & Memory",
+        right: "19 cognitive workers, continuous knowledge acquisition, organizational memory",
         color: "rgba(167, 139, 250, 1)",
         glow: "rgba(167, 139, 250, 0.46)", // darker/stronger particles
       },
@@ -277,26 +277,39 @@ export default function JasuBrainSection() {
               </svg>
             </div>
 
-            <div className="mt-4 text-center text-xs text-[rgb(var(--muted))]">Hover or click a layer to explore</div>
-
             {/* Mini legend buttons */}
             <div className="mt-6 grid grid-cols-2 gap-3">
-              {layers.map((l) => (
-                <button
-                  key={l.key}
-                  onClick={() => setActive(l.key)}
-                  className={`rounded-xl border border-[rgb(var(--border))] px-3 py-2 text-left text-sm transition
-                    ${active === l.key
-                      ? "bg-white/[0.05]"
-                      : "bg-[rgb(var(--bg))]/10 hover:bg-white/[0.03]"
-                    }`}
-                >
-                  <div className="text-sm font-semibold" style={{ color: l.color }}>
-                    {l.title}
-                  </div>
-                  <div className="text-xs text-[rgb(var(--muted))]">{l.subtitle}</div>
-                </button>
-              ))}
+              {layers.map((l) => {
+                const isActive = active === l.key;
+
+                return (
+                  <button
+                    key={l.key}
+                    onClick={() => setActive(l.key)}
+                    className={[
+                      "group relative rounded-xl px-3 py-2 text-left text-sm",
+                      "transition-all duration-200",
+                      "cursor-pointer select-none",
+                      "border",
+                      "bg-white/35 backdrop-blur",
+                      "shadow-[0_10px_22px_-18px_rgba(15,23,42,0.45)]",
+                      "hover:-translate-y-[1px] hover:bg-white/55 hover:shadow-[0_18px_30px_-20px_rgba(15,23,42,0.55)]",
+                      "active:translate-y-0 active:shadow-[0_12px_22px_-18px_rgba(15,23,42,0.50)]",
+                      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--primary),0.25)] focus-visible:ring-offset-2 focus-visible:ring-offset-[rgb(var(--bg))]",
+                      isActive
+                        ? "border-[rgba(var(--primary),0.35)] bg-white/60"
+                        : "border-[rgb(var(--border))]",
+                    ].join(" ")}
+                    // Optional: makes active border match the layer color (looks premium)
+                    style={isActive ? { borderColor: l.color } : undefined}
+                  >
+                    <div className="text-sm font-semibold" style={{ color: l.color }}>
+                      {l.title}
+                    </div>
+                    <div className="text-xs text-[rgb(var(--muted))]">{l.subtitle}</div>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
@@ -318,7 +331,7 @@ export default function JasuBrainSection() {
 
                 {active === "userbrain" && (
                   <div className="rounded-full border border-[rgb(var(--border))] bg-white/[0.04] px-4 py-2 text-xs font-semibold text-[rgb(var(--gold))]">
-                    Differentiator
+                    AI Unite Differentiator
                   </div>
                 )}
               </div>
@@ -338,11 +351,6 @@ export default function JasuBrainSection() {
                   <div className="text-xs font-semibold tracking-[0.26em] text-[rgb(var(--muted))]">OUTPUT</div>
                   <div className="mt-2 text-sm leading-relaxed text-[rgb(var(--text))]/85">{activeLayer.right}</div>
                 </div>
-              </div>
-
-              <div className="mt-8 text-sm leading-relaxed text-[rgb(var(--muted))]">
-                Tip: Keep <span className="text-[rgb(var(--text))]">UserBrain</span> selected when pitching — it’s the
-                “this doesn’t exist elsewhere” hook.
               </div>
             </motion.div>
           </div>
