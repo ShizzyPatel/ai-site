@@ -21,7 +21,7 @@ const layers: Layer[] = [
     n: "02",
     title: "Heterogeneous Source Synthesis",
     desc: "AI + APIs + real-time data combined",
-    accent: "text-blue-400",
+    accent: "text-cyan-400",
   },
   {
     n: "03",
@@ -45,7 +45,7 @@ const layers: Layer[] = [
     n: "06",
     title: "Autonomous Learning",
     desc: "19 workers, 24/7 intelligence growth",
-    accent: "text-blue-400",
+    accent: "text-indigo-400",
   },
   {
     n: "07",

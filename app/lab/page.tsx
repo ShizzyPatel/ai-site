@@ -3,10 +3,10 @@ import LabSidebar, { LabNavItem } from "./_components/LabSidebar";
 import SectionBlock from "./_components/SectionBlock";
 
 const NAV: LabNavItem[] = [
-  { id: "patent-portfolio", label: "Patent Portfolio" },
-  { id: "use-cases", label: "Use Cases" },
   { id: "how-it-thinks", label: "How It Thinks" },
+  { id: "use-cases", label: "Use Cases" },
   { id: "security-privacy", label: "Security & Privacy" },
+  { id: "patent-portfolio", label: "Patent Portfolio" },  
 ];
 
 function MobileAnchors() {
