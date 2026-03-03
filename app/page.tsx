@@ -13,6 +13,7 @@ import PathsToMarketSection from "./components/PathsToMarketSection";
 import CompetitiveComparisonSection from "./components/CompetitiveComparisonSection";
 import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
+import CorporateBrain from "./components/CorporateBrain";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <VisionSection />
       <LayersSection />
       <JasuBrainSection />
+      <CorporateBrain />
       <EmergenceEngineSection />
       <AutonomousWorkersSection />
       <TeamSection /> 

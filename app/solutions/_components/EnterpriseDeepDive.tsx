@@ -38,9 +38,9 @@ const ARCH_LAYERS = [
 ];
 
 const REQUIREMENTS = [
-  { icon: "🔒", title: "Complete Data Isolation", color: "#2ECC71", items: ["Federated learning — your data never leaves your environment", "Per-tenant encryption and access controls", "SOC 2 compliant architecture"] },
-  { icon: "🏗️", title: "Enterprise Architecture",  color: "#2E75B6", items: ["99.9% uptime SLA with circuit breakers", "Sub-3-second response times at scale", "Deploys on-prem or in your cloud"] },
-  { icon: "⚡",  title: "Zero Disruption",          color: "#F59E0B", items: ["Database-driven config — no code changes", "New AI providers added in 30 seconds", "Plugs into your existing stack via REST API"] },
+  { icon: "🔒", title: "Complete Data Isolation", color: "#2ECC71", items: ["Multi-tenant architecture — every organization's data is fully isolated", "Per-tenant encryption and access controls", "Audit logging enabled by default with full query traceability", "SOC 2 ready infrastructure (encryption at rest, role-based access, tenant separation)"] },
+  { icon: "🏗️", title: "Enterprise Architecture",  color: "#2E75B6", items: ["Circuit breakers and self-healing across all AI providers", "Parallel execution with intelligent stopping — no wasted compute","Cloud-native on GCP with auto-scaling and health monitoring", "Private deployment options available"] },
+  { icon: "⚡",  title: "Zero Disruption",          color: "#F59E0B", items: ["Database-driven configuration — no code changes required", "New AI providers added without downtime", "RESTful API for integration with your existing stack", "Zero vendor lock-in — swap or add providers at any timePlugs into your existing stack via REST API"] },
 ];
 
 const GROWTH_STAGES = [
@@ -345,11 +345,11 @@ export default function EnterpriseDeepDive() {
       {/* 2 ── STAT BAR ──────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-6 py-7 mb-12" style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.12)" }}>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { number: "$340B", label: "lost annually to organizational silos",       color: "#EF4444" },
-            { number: "83%",   label: "of executives say silos hurt their business", color: "#F59E0B" },
-            { number: "20+",   label: "AI tools in the average enterprise",           color: "#EF4444" },
-            { number: "0",     label: "that share context across departments",        color: "rgb(var(--muted))" },
+          {[ 
+            { number: "$3.1T", label: "lost annually to data silos", color: "#EF4444" },
+            { number: "80%",   label: "of executives say silos hurt decision-making", color: "#F59E0B" },
+            { number: "20+",   label: "AI tools in the average enterprise", color: "#EF4444" },
+            { number: "0",     label: "that share context across departments", color: "rgb(var(--muted))" },
           ].map(({ number, label, color }) => (
             <div key={number} className="text-center">
               <div className="text-2xl md:text-3xl font-bold leading-none mb-2" style={{ color }}>{number}</div>
