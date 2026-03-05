@@ -80,10 +80,6 @@ export default function LabSidebar({ items }: LabSidebarProps) {
           );
         })}
       </nav>
-
-      <div className="mt-8 text-xs text-[rgb(var(--muted))] leading-relaxed">
-        Structured technical overview. We’ll replace placeholder text with finalized client copy.
-      </div>
     </aside>
   );
 }

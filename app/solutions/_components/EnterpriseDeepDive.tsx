@@ -177,7 +177,7 @@ function OrgGrid({ connected }: { connected: boolean }) {
             }}
           >
             <span style={{ fontSize: 16 }}>{dept.icon}</span>
-            <span style={{ fontSize: 7.5, color: connected ? dept.color : "rgb(var(--muted))", fontWeight: 600, letterSpacing: "0.03em" }}>
+            <span style={{ fontSize: 7.5, color: connected ? dept.color : "rgba(255,255,255,0.45)", fontWeight: 600, letterSpacing: "0.03em" }}>
               {dept.label}
             </span>
           </div>
@@ -209,17 +209,17 @@ function SiloDemo() {
           {d.icon}
         </div>
         <span style={{ fontSize: 10, color: d.color, fontWeight: 700, letterSpacing: "0.12em" }}>{q.dept.toUpperCase()}</span>
-        <span className="text-[10px] text-[rgb(var(--muted))]">→ {q.tool}</span>
+        <span className="text-[10px] text-white/55">→ {q.tool}</span>
       </div>
 
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">Team asks</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">Team asks</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
 
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.14)" }}>
         <div className="text-[10px] mb-1.5 font-medium uppercase tracking-wider" style={{ color: "#EF4444" }}>⚠️ AI responds</div>
-        <div className="text-xs leading-relaxed italic text-[rgb(var(--muted))]">
+        <div className="text-xs leading-relaxed italic text-white/55">
           <TypeWriter text={q.result} speed={15} delay={500} onDone={() => setTyping(false)} key={step} />
         </div>
       </div>
@@ -262,9 +262,9 @@ function UniteDemo() {
         </span>
       </div>
 
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">Team asks</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">Team asks</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
 
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(46,204,113,0.04)", border: "1px solid rgba(46,204,113,0.14)" }}>
@@ -272,7 +272,7 @@ function UniteDemo() {
           <span style={{ width: 5, height: 5, borderRadius: "50%", background: green, boxShadow: `0 0 8px rgba(46,204,113,0.5)`, display: "inline-block" }} />
           AI Unite responds
         </div>
-        <div className="text-xs leading-relaxed text-[rgb(var(--text))]">
+        <div className="text-xs leading-relaxed text-white/90">
           <TypeWriter text={q.result} speed={9} delay={400} onDone={() => setTyping(false)} key={step + "u"} />
         </div>
       </div>
@@ -298,14 +298,14 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] leading-snug">
+    <h3 className="text-xl md:text-2xl font-semibold text-white/90 leading-snug">
       {children}
     </h3>
   );
 }
 
 function Divider() {
-  return <div className="h-px w-full bg-[rgb(var(--border))]/40 my-12" />;
+  return <div className="h-px w-full bg-white/10 my-12" />;
 }
 
 // ─── Main export ──────────────────────────────────────────────────────────────
@@ -317,7 +317,7 @@ function Divider() {
 
 export default function EnterpriseDeepDive() {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #0f1729 0%, #111827 60%, #0d1520 100%)", borderRadius: 16, padding: "32px 24px" }}>
 
       {/* 1 ── THE PROBLEM ───────────────────────────────────────────────────── */}
       <div className="mb-12">
@@ -326,13 +326,13 @@ export default function EnterpriseDeepDive() {
           Nine departments. Nine AI tools.{" "}
           <span style={{ color: "#EF4444" }}>Nine blind spots.</span>
         </SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Engineering doesn't know what Sales is hearing. Finance can't see Product's roadmap.
           HR's attrition data never reaches the teams it explains. Every AI tool answers in a vacuum —
           missing the cross-departmental context that drives real decisions.
         </p>
         <div className="mt-8 grid gap-10 lg:grid-cols-2 items-start">
-          <div>
+          <div style={{ background: "linear-gradient(135deg, #0f1729 0%, #111827 60%, #0d1520 100%)", borderRadius: 16, padding: "32px 24px" }}>
             <OrgGrid connected={false} />
             <p className="text-center text-xs mt-3 italic" style={{ color: "#EF4444" }}>
               No connections. Every department is an island.
@@ -349,11 +349,11 @@ export default function EnterpriseDeepDive() {
             { number: "$3.1T", label: "lost annually to data silos", color: "#EF4444" },
             { number: "80%",   label: "of executives say silos hurt decision-making", color: "#F59E0B" },
             { number: "20+",   label: "AI tools in the average enterprise", color: "#EF4444" },
-            { number: "0",     label: "that share context across departments", color: "rgb(var(--muted))" },
+            { number: "0",     label: "that share context across departments", color: "rgba(255,255,255,0.45)" },
           ].map(({ number, label, color }) => (
             <div key={number} className="text-center">
               <div className="text-2xl md:text-3xl font-bold leading-none mb-2" style={{ color }}>{number}</div>
-              <div className="text-xs text-[rgb(var(--muted))] leading-snug">{label}</div>
+              <div className="text-xs text-white/55 leading-snug">{label}</div>
             </div>
           ))}
         </div>
@@ -369,7 +369,7 @@ export default function EnterpriseDeepDive() {
           <span style={{ color: "#2ECC71" }}>Every decision informed.</span>
         </SectionHeading>
         <div className="mt-8 grid gap-10 lg:grid-cols-2 items-start">
-          <div>
+          <div style={{ background: "linear-gradient(135deg, #0f1729 0%, #111827 60%, #0d1520 100%)", borderRadius: 16, padding: "32px 24px" }}>
             <OrgGrid connected={true} />
             <p className="text-center text-xs mt-3 italic" style={{ color: "#2ECC71" }}>
               CorporateBrain connects every node. Intelligence flows everywhere.
@@ -387,13 +387,13 @@ export default function EnterpriseDeepDive() {
         <SectionHeading>How the intelligence layers work</SectionHeading>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ARCH_LAYERS.map((item) => (
-            <div key={item.step} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-5">
-              <div className="text-3xl font-bold mb-2 leading-none select-none" style={{ color: `${item.color}25` }}>
+            <div key={item.step} className="rounded-2xl border border-white/10/60 bg-white/[0.06] p-5">
+              <div className="text-3xl font-bold mb-2 leading-none select-none" style={{ color: item.color }}>
                 {item.step}
               </div>
               <div className="text-sm font-semibold mb-0.5" style={{ color: item.color }}>{item.title}</div>
-              <div className="text-[9px] uppercase tracking-[0.2em] font-semibold text-[rgb(var(--muted))] mb-3">{item.sub}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{item.desc}</p>
+              <div className="text-[9px] uppercase tracking-[0.2em] font-semibold text-white/55 mb-3">{item.sub}</div>
+              <p className="text-xs leading-relaxed text-white/55">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -407,14 +407,14 @@ export default function EnterpriseDeepDive() {
         <SectionHeading>Built for enterprise requirements</SectionHeading>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {REQUIREMENTS.map((card) => (
-            <div key={card.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
+            <div key={card.title} className="rounded-2xl border border-white/10/60 bg-white/[0.06] p-6">
               <div className="text-2xl mb-3">{card.icon}</div>
               <div className="text-sm font-semibold mb-4" style={{ color: card.color }}>{card.title}</div>
               <ul className="space-y-2.5">
                 {card.items.map((item, j) => (
                   <li key={j} className="flex gap-2.5 items-start">
                     <span className="mt-[5px] h-1.5 w-1.5 rounded-full shrink-0" style={{ background: card.color }} />
-                    <span className="text-xs leading-relaxed text-[rgb(var(--text))]">{item}</span>
+                    <span className="text-xs leading-relaxed text-white/90">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -433,19 +433,19 @@ export default function EnterpriseDeepDive() {
           {GROWTH_STAGES.map((stage, i) => (
             <div key={stage.size} className="relative">
               {i < 2 && (
-                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-[rgb(var(--border))]/40 bg-[rgb(var(--bg))] text-[rgb(var(--muted))] text-xs">
+                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-white/10/40 bg-[rgb(var(--bg))] text-white/55 text-xs">
                   →
                 </div>
               )}
-              <div className="h-full rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] overflow-hidden" style={{ borderTop: `2.5px solid ${stage.color}` }}>
+              <div className="h-full rounded-2xl border border-white/10/60 bg-white/[0.06] overflow-hidden" style={{ borderTop: `2.5px solid ${stage.color}` }}>
                 <div className="p-6" style={{ background: `linear-gradient(180deg, ${stage.color}07 0%, transparent 55%)` }}>
                   <div className="text-2xl font-bold mb-1" style={{ color: stage.color }}>{stage.size}</div>
-                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-[rgb(var(--muted))]">{stage.label}</div>
+                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-white/55">{stage.label}</div>
                   <ul className="space-y-3">
                     {stage.items.map((item, j) => (
                       <li key={j} className="flex gap-2.5 items-start">
                         <span className="mt-[5px] h-1.5 w-1.5 rounded-full shrink-0" style={{ background: stage.color }} />
-                        <span className="text-xs leading-relaxed text-[rgb(var(--text))]">{item}</span>
+                        <span className="text-xs leading-relaxed text-white/90">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -463,11 +463,11 @@ export default function EnterpriseDeepDive() {
 
       {/* 7 ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-8 py-10 text-center" style={{ background: "rgba(46,204,113,0.04)", border: "1px solid rgba(46,204,113,0.15)" }}>
-        <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] mb-3 leading-snug">
+        <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-3 leading-snug">
           Your org chart is connected.<br />
           Your intelligence should be too.
         </h3>
-        <p className="text-sm text-[rgb(var(--muted))] max-w-md mx-auto mb-6 leading-relaxed">
+        <p className="text-sm text-white/55 max-w-md mx-auto mb-6 leading-relaxed">
           One platform. Every department. Full organizational context. The Switzerland of AI —
           vendor-neutral, enterprise-grade.
         </p>
@@ -478,7 +478,7 @@ export default function EnterpriseDeepDive() {
         >
           Schedule a Demo <span>→</span>
         </a>
-        <p className="text-xs text-[rgb(var(--muted))] mt-4">Enterprise pilots available for qualified organizations</p>
+        <p className="text-xs text-white/55 mt-4">Enterprise pilots available for qualified organizations</p>
       </div>
 
     </div>

@@ -6,7 +6,25 @@ const NAV: LabNavItem[] = [
   { id: "how-it-thinks", label: "How It Thinks" },
   { id: "use-cases", label: "Use Cases" },
   { id: "security-privacy", label: "Security & Privacy" },
-  { id: "patent-portfolio", label: "Patent Portfolio" },  
+  { id: "patent-portfolio", label: "Patent Portfolio" },
+];
+
+const HOW_IT_THINKS = [
+  {
+    num: "01",
+    title: "Reasoning + memory + feedback loops as a system",
+    body: "JASU isn't a model — it's a 4-layer brain architecture working in parallel: a Reptilian foundation for survival and recovery, a Limbic layer for learning and memory, a Neocortex for reasoning and domain intelligence, and a UserBrain that personalizes everything. Every query activates all four layers simultaneously.",
+  },
+  {
+    num: "02",
+    title: "Orchestration layer",
+    body: "A single query triggers cognitive mode selection (retrieval, exploration, synthesis, or insight), intelligent routing across 15+ AI models, parallel execution with diminishing-returns detection, contradiction identification, cross-domain bridge discovery, and synthesis into one unified output. The system then records what it learned.",
+  },
+  {
+    num: "03",
+    title: "Continuous alignment",
+    body: "Each output improves future performance through feedback loops, trace logging, and reinforcement of successful reasoning paths.",
+  },
 ];
 
 function MobileAnchors() {
@@ -31,53 +49,54 @@ export default function LabPage() {
   return (
     <main className="pb-24">
       <LabLayout mobileNav={<MobileAnchors />} sidebar={<LabSidebar items={NAV} />}>
-        {/* HERO (now padded away from sidebar) */}
-        <div className="pt-14 md:pt-20">
-          <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
-            THE LAB
-          </div>
 
-          <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
+        {/* HERO */}
+        <div className="pt-14 md:pt-20">
+          <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))] max-w-2xl">
             Proof, architecture, and how the system thinks.
           </h1>
         </div>
 
-        {/* SECTIONS */}
-        <SectionBlock
+        {/* HOW IT THINKS — custom layout instead of SectionBlock bullets */}
+        <section
           id="how-it-thinks"
-          eyebrow="THE LAB"
-          title="How It Thinks"
-          subtitle="Inside the Emergence Engine, JASU, and autonomous learning."
-          bullets={[
-            <>
-              <span className="font-semibold text-[rgb(var(--text))]">
-                Reasoning + memory + feedback loops as a system.
-              </span>{"  - "}
-              JASU isn’t a model — it’s a 4-layer brain architecture working in parallel:
-              a Reptilian foundation for survival and recovery, a Limbic layer for learning and memory,
-              a Neocortex for reasoning and domain intelligence, and a UserBrain that personalizes everything.
-              Every query activates all four layers simultaneously.
-            </>,
+          className="scroll-mt-32 py-16 md:py-20 border-b border-[rgb(var(--border))]/60"
+        >
+          <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
+            THE LAB
+          </div>
+          <h2 className="mt-4 text-3xl md:text-4xl font-semibold tracking-tight text-[rgb(var(--text))]">
+            How It Thinks
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-[rgb(var(--muted))]">
+            Inside the Emergence Engine, JASU, and autonomous learning.
+          </p>
 
-            <>
-              <span className="font-semibold text-[rgb(var(--text))]">
-                Orchestration layer
-              </span>{" - "}
-              A single query triggers cognitive mode selection (retrieval, exploration, synthesis, or insight),
-              intelligent routing across 15+ AI models, parallel execution with diminishing-returns detection,
-              contradiction identification, cross-domain bridge discovery, and synthesis into one unified output.
-              The system then records what it learned.
-            </>,
+          <div className="mt-10 space-y-4 max-w-2xl">
+            {HOW_IT_THINKS.map((item) => (
+              <div
+                key={item.num}
+                className="flex gap-5 rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6"
+              >
+                {/* Number */}
+                <div className="shrink-0 text-xl font-bold font-mono text-[rgb(var(--primary))]/30 leading-none pt-0.5 w-8">
+                  {item.num}
+                </div>
+                {/* Content */}
+                <div>
+                  <div className="text-sm font-semibold text-[rgb(var(--text))] mb-2">
+                    {item.title}
+                  </div>
+                  <p className="text-sm leading-relaxed text-[rgb(var(--muted))]">
+                    {item.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
-            <>
-              <span className="font-semibold text-[rgb(var(--text))]">
-                Continuous alignment.
-              </span>{"  - "}
-              Each output improves future performance through feedback loops,
-              trace logging, and reinforcement of successful reasoning paths.
-            </>,
-          ]}
-        />
+        {/* REMAINING SECTIONS */}
         <SectionBlock
           id="use-cases"
           eyebrow="THE LAB"
@@ -111,6 +130,7 @@ export default function LabPage() {
             "Placeholder: how this differentiates from generic AI wrappers.",
           ]}
         />
+
       </LabLayout>
     </main>
   );

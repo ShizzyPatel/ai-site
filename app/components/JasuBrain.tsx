@@ -203,12 +203,13 @@ export default function JasuBrainSection() {
   }, [active, layers]);
 
   return (
-    <Section className="py-24">
+    <Section className="py-24" id="jasu">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
           <h2 className="mt-4 font-display text-6xl leading-[1.02] tracking-tight text-[rgb(var(--text))]">
-            JASU — 4-Layer Brain Architecture
+            Joint Autonomous Strategic Unit - JASU
           </h2>
+          <p className="mt-4 max-w-4xl text-lg italic text-[rgb(var(--muted))]">4 Layer Brain Architecture</p>
 
           <p className="mt-4 max-w-4xl text-lg italic text-[rgb(var(--muted))]">
             Evolution took millions of years to build 3 brain layers. We built all 3 digitally — then added a 4th.

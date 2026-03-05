@@ -31,18 +31,14 @@ export default function AboutUsPage() {
   return (
     <main className="pb-24">
       <AboutLayout mobileNav={<MobileAnchors />} sidebar={<AboutSidebar items={NAV} />}>
+
         {/* HERO */}
         <div className="pt-14 md:pt-20">
-          <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
-            ABOUT US
-          </div>
-
-          <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
+          <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))] max-w-2xl">
             The team, the thesis, and why this company exists.
           </h1>
-
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-[rgb(var(--muted))]">
-            AI is powerful — but fragmented. We’re building a coherent intelligence stack:
+            AI is powerful — but fragmented. We're building a coherent intelligence stack:
             memory, orchestration, governance, and synthesis that holds up under real-world constraints.
           </p>
         </div>
@@ -51,7 +47,7 @@ export default function AboutUsPage() {
           id="the-story"
           eyebrow="ABOUT US"
           title="Why AI Unite exists"
-          subtitle="Most AI deployments fail in the gap between “a model can answer” and “an organization can rely on it.” We build the missing layer."
+          subtitle="Most AI deployments fail in the gap between a model can answer and an organization can rely on it. We build the missing layer."
           bullets={[
             "AI fragmentation demanded orchestration + governance across tools and teams.",
             "The goal is coherence: decisions that remain traceable, repeatable, and secure.",
@@ -67,7 +63,7 @@ export default function AboutUsPage() {
           bullets={[
             "Coherence over hype: consistency across sessions, sources, and stakeholders.",
             "Governance by design: policy, permissions, and auditability are first-class.",
-            "Traceable intelligence: explain sources and reasoning — or it isn’t trustworthy.",
+            "Traceable intelligence: explain sources and reasoning — or it isn't trustworthy.",
             "Enterprise-grade craft: performance, reliability, and UX polish are non-negotiable.",
           ]}
         />
@@ -75,7 +71,7 @@ export default function AboutUsPage() {
         <SectionBlock
           id="team-advisors"
           eyebrow="ABOUT US"
-          title="Team & advisors"
+          title="Team & Advisors"
           subtitle="Built by operators. Guided by experts. Designed for production."
           bullets={[
             "Operator-led: informed by product, security, and enterprise delivery experience.",
@@ -95,6 +91,7 @@ export default function AboutUsPage() {
             "Milestone: placeholder valuation / funding note.",
           ]}
         />
+
       </AboutLayout>
     </main>
   );

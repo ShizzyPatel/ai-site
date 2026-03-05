@@ -51,9 +51,9 @@ export default function Header() {
             description="The architecture behind cognitive intelligence: why fragmentation exists, and how we unify reasoning, memory, and learning."
             links={[
               { label: "Problem", href: "/#problem", desc: "Why AI is powerful but structurally incomplete." },
-              { label: "Vision", href: "/#vision", desc: "Vendor-neutral intelligence — the Switzerland of AI." },
               { label: "Layers", href: "/#layers", desc: "JASU architecture and the intelligence stack." },
-              { label: "Compare", href: "/#compare", desc: "How AI UNITE differs from chatbots and aggregators." },
+              { label: "User/Corporate Brain", href: "/#jasu", desc: "We need to add some new text here." },
+              { label: "Emergence Engine", href: "/#emergence", desc: "How intelligence emerges from the synthesis of multiple AI perspectives." },
             ]}
           />
 

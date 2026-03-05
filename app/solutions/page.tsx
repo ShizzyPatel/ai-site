@@ -12,7 +12,7 @@ import ExtensionDeepDive from "./_components/ExtensionDeepDive";
 const NAV: SolutionsNavItem[] = [
   { id: "enterprise", label: "Enterprise" },
   { id: "smb", label: "SMB" },
-  { id: "family", label: "Family" },
+  { id: "academia", label: "Academia" },
   { id: "platform", label: "Platform" },
   { id: "api", label: "API" },
   { id: "extension", label: "Extension" },
@@ -46,9 +46,6 @@ export default function SolutionsPage() {
       <SolutionsLayout mobileNav={<MobileAnchors />} sidebar={<SolutionsSidebar items={NAV} />}>
         {/* Page Hero — moved INSIDE layout so it gets the right-padding reserve */}
         <div className="pt-14 md:pt-20">
-          <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
-            SOLUTIONS
-          </div>
 
           <h1 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-[rgb(var(--text))]">
             Deploy cognitive intelligence across environments.
