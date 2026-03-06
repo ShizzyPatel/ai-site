@@ -170,6 +170,7 @@ export default function DeepDive({
           ref={toggleBtnRef}
           type="button"
           onClick={() => setOpen((v) => !v)}
+          suppressHydrationWarning
           className="w-full px-5 py-4 text-left"
           aria-expanded={open}
         >

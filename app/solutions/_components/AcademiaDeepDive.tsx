@@ -123,7 +123,7 @@ function ToolSprawl() {
         <div key={tool.name} className="flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs"
           style={{ background: "rgba(255,255,255,0.03)", borderColor: `${tool.color}33` }}>
           <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: tool.color }} />
-          <span className="text-[rgb(var(--text))]">{tool.name}</span>
+          <span className="text-white/90">{tool.name}</span>
           <span className="font-semibold" style={{ color: "#EF4444" }}>{tool.price}</span>
         </div>
       ))}
@@ -155,15 +155,15 @@ function ChaosDemo() {
       <div className="flex items-center gap-2">
         <div style={{ width: 27, height: 27, borderRadius: "50%", background: `${role.color}18`, border: `1.5px solid ${role.color}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, flexShrink: 0 }}>{role.icon}</div>
         <span style={{ fontSize: 10, color: role.color, fontWeight: 700, letterSpacing: "0.12em" }}>YOU AS {q.role.toUpperCase()}</span>
-        <span className="text-[10px] text-[rgb(var(--muted))]">→ {q.tool}</span>
+        <span className="text-[10px] text-white/55">→ {q.tool}</span>
       </div>
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">You ask</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">You ask</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.14)" }}>
         <div className="text-[10px] mb-1.5 font-medium uppercase tracking-wider" style={{ color: "#EF4444" }}>⚠️ AI responds</div>
-        <div className="text-xs leading-relaxed italic text-[rgb(var(--muted))]">
+        <div className="text-xs leading-relaxed italic text-white/55">
           <TypeWriter text={q.result} speed={17} delay={600} onDone={() => setTyping(false)} key={step} />
         </div>
       </div>
@@ -202,16 +202,16 @@ function UniteDemo() {
           AI Unite knows your full context
         </span>
       </div>
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">You ask</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">You ask</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(59,130,246,0.04)", border: "1px solid rgba(59,130,246,0.14)" }}>
         <div className="flex items-center gap-1.5 text-[10px] mb-1.5 font-medium uppercase tracking-wider" style={{ color: blue }}>
           <span style={{ width: 5, height: 5, borderRadius: "50%", background: blue, boxShadow: `0 0 8px rgba(59,130,246,0.5)`, display: "inline-block" }} />
           AI Unite responds
         </div>
-        <div className="text-xs leading-relaxed text-[rgb(var(--text))]">
+        <div className="text-xs leading-relaxed text-white/90">
           <TypeWriter text={q.result} speed={9} delay={400} onDone={() => setTyping(false)} key={step + "u"} />
         </div>
       </div>
@@ -326,7 +326,7 @@ function SynthesisDemo() {
         <div className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-2" style={{ color: blue }}>
           Cross-disciplinary insight discovered
         </div>
-        <div className="text-xs leading-relaxed text-[rgb(var(--text))]">
+        <div className="text-xs leading-relaxed text-white/90">
           <TypeWriter text={ex.insight} speed={11} delay={400} onDone={() => setTyping(false)} key={active + "s"} />
         </div>
       </div>
@@ -342,23 +342,23 @@ function SynthesisDemo() {
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 
-function SectionLabel({ children, color = "rgb(var(--primary))" }: { children: React.ReactNode; color?: string }) {
+function SectionLabel({ children, color = "#60a5fa" }: { children: React.ReactNode; color?: string }) {
   return <div className="text-[10px] font-semibold tracking-[0.22em] mb-3 uppercase" style={{ color }}>{children}</div>;
 }
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] leading-snug">{children}</h3>;
+  return <h3 className="text-xl md:text-2xl font-semibold text-white/90 leading-snug">{children}</h3>;
 }
 
 function Divider() {
-  return <div className="h-px w-full bg-[rgb(var(--border))]/40 my-12" />;
+  return <div className="h-px w-full bg-white/10 my-12" />;
 }
 
 // ─── Main export ──────────────────────────────────────────────────────────────
 
 export default function AcademiaDeepDive() {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #1a0f0a 0%, #2a1508 55%, #1a0d07 100%)", borderRadius: 16, padding: "32px 24px" }}>
 
       {/* 1 ── THE PROBLEM ───────────────────────────────────────────────────── */}
       <div className="mb-12">
@@ -367,14 +367,14 @@ export default function AcademiaDeepDive() {
           Six roles. Six tools.{" "}
           <span style={{ color: "#EF4444" }}>None know your research.</span>
         </SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Your grant writing AI doesn't know your lab results. Your teaching AI doesn't know your
           research. Your literature search tool doesn't know what you're actually working on.
           You re-explain your academic life dozens of times a day.
         </p>
         <div className="mt-8 grid gap-10 lg:grid-cols-2 items-start">
           <div>
-            <p className="text-xs font-semibold text-[rgb(var(--muted))] uppercase tracking-wider mb-4">Tool sprawl adding up</p>
+            <p className="text-xs font-semibold text-white/55 uppercase tracking-wider mb-4">Tool sprawl adding up</p>
             <ToolSprawl />
           </div>
           <ChaosDemo />
@@ -389,11 +389,11 @@ export default function AcademiaDeepDive() {
             { number: "73%",  label: "of researchers use AI weekly",           color: "#3B82F6" },
             { number: "17hrs",label: "lost per week to context-switching",      color: "#F59E0B" },
             { number: "82%",  label: "of breakthroughs are cross-disciplinary", color: "#8B5CF6" },
-            { number: "0",    label: "AI tools connect across departments",      color: "rgb(var(--muted))" },
+            { number: "0",    label: "AI tools connect across departments",      color: "rgba(255,255,255,0.50)" },
           ].map(({ number, label, color }) => (
             <div key={number} className="text-center">
               <div className="text-2xl md:text-3xl font-bold leading-none mb-2" style={{ color }}>{number}</div>
-              <div className="text-xs text-[rgb(var(--muted))] leading-snug">{label}</div>
+              <div className="text-xs text-white/55 leading-snug">{label}</div>
             </div>
           ))}
         </div>
@@ -403,7 +403,7 @@ export default function AcademiaDeepDive() {
 
       {/* 3 ── SOLUTION: PERSONAL CONTEXT ────────────────────────────────────── */}
       <div className="mb-12">
-        <SectionLabel color="#3B82F6">One platform for your entire academic life</SectionLabel>
+        <SectionLabel color="#60a5fa">One platform for your entire academic life</SectionLabel>
         <SectionHeading>
           AI that knows your research,{" "}
           <span style={{ color: "#3B82F6" }}>your teaching, and your lab.</span>
@@ -423,12 +423,12 @@ export default function AcademiaDeepDive() {
 
       {/* 4 ── CROSS-DISCIPLINARY SYNTHESIS ──────────────────────────────────── */}
       <div className="mb-12">
-        <SectionLabel color="#8B5CF6">Where breakthroughs actually happen</SectionLabel>
+        <SectionLabel color="#c084fc">Where breakthroughs actually happen</SectionLabel>
         <SectionHeading>
           Discoveries live at the{" "}
           <span style={{ color: "#8B5CF6" }}>intersection of fields.</span>
         </SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl mb-8">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl mb-8">
           AI Unite doesn't just know your work — it connects patterns across every discipline
           in your institution. The insight your research needs might already exist in another department.
         </p>
@@ -443,7 +443,7 @@ export default function AcademiaDeepDive() {
               <span>{d.icon}</span>{d.name}
             </div>
           ))}
-          <div className="flex items-center px-3 py-1.5 rounded-xl border text-xs text-[rgb(var(--muted))]"
+          <div className="flex items-center px-3 py-1.5 rounded-xl border text-xs text-white/55"
             style={{ background: "rgba(0,0,0,0.03)", borderColor: "rgba(0,0,0,0.1)", borderStyle: "dashed" }}>
             + every discipline
           </div>
@@ -454,19 +454,19 @@ export default function AcademiaDeepDive() {
 
       {/* 5 ── WHO IT'S FOR ──────────────────────────────────────────────────── */}
       <div className="mb-12">
-        <SectionLabel color="#3B82F6">Built for every level of academia</SectionLabel>
+        <SectionLabel color="#60a5fa">Built for every level of academia</SectionLabel>
         <SectionHeading>The right fit at every scale</SectionHeading>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {WHO_ITS_FOR.map((card) => (
-            <div key={card.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
+            <div key={card.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6">
               <div className="text-2xl mb-3">{card.icon}</div>
               <div className="text-sm font-semibold mb-2" style={{ color: card.color }}>{card.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-4">{card.desc}</p>
+              <p className="text-xs leading-relaxed text-white/55 mb-4">{card.desc}</p>
               <ul className="space-y-2">
                 {card.items.map((item, j) => (
                   <li key={j} className="flex gap-2.5 items-start">
                     <span className="mt-[5px] h-1.5 w-1.5 rounded-full shrink-0" style={{ background: card.color }} />
-                    <span className="text-xs leading-relaxed text-[rgb(var(--text))]">{item}</span>
+                    <span className="text-xs leading-relaxed text-white/90">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -479,26 +479,26 @@ export default function AcademiaDeepDive() {
 
       {/* 6 ── GROWTH STAGES ─────────────────────────────────────────────────── */}
       <div className="mb-12">
-        <SectionLabel color="#3B82F6">Deployment path</SectionLabel>
+        <SectionLabel color="#60a5fa">Deployment path</SectionLabel>
         <SectionHeading>Scales with your institution</SectionHeading>
-        <p className="mt-2 text-sm text-[rgb(var(--muted))]">The same platform from one researcher to an entire university.</p>
+        <p className="mt-2 text-sm text-white/55">The same platform from one researcher to an entire university.</p>
 
         <div className="mt-8 grid lg:grid-cols-3 gap-4">
           {GROWTH_STAGES.map((stage, i) => (
             <div key={stage.size} className="relative">
               {i < 2 && (
-                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-[rgb(var(--border))]/40 bg-[rgb(var(--bg))] text-[rgb(var(--muted))] text-xs">→</div>
+                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-white/10 bg-white/5 text-white/55 text-xs">→</div>
               )}
-              <div className="h-full rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] overflow-hidden"
+              <div className="h-full rounded-2xl border border-white/10/60 bg-white/[0.07] overflow-hidden"
                 style={{ borderTop: `2.5px solid ${stage.color}` }}>
                 <div className="p-6" style={{ background: `linear-gradient(180deg, ${stage.color}07 0%, transparent 55%)` }}>
                   <div className="text-2xl font-bold mb-1" style={{ color: stage.color }}>{stage.size}</div>
-                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-[rgb(var(--muted))]">{stage.label}</div>
+                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-white/55">{stage.label}</div>
                   <ul className="space-y-3">
                     {stage.items.map((item, j) => (
                       <li key={j} className="flex gap-2.5 items-start">
                         <span className="mt-[5px] h-1.5 w-1.5 rounded-full shrink-0" style={{ background: stage.color }} />
-                        <span className="text-xs leading-relaxed text-[rgb(var(--text))]">{item}</span>
+                        <span className="text-xs leading-relaxed text-white/90">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -518,18 +518,18 @@ export default function AcademiaDeepDive() {
       {/* 7 ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-8 py-10 text-center"
         style={{ background: "rgba(59,130,246,0.04)", border: "1px solid rgba(59,130,246,0.15)" }}>
-        <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] mb-3 leading-snug">
+        <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-3 leading-snug">
           Your next breakthrough might<br />already exist — in another department.
         </h3>
-        <p className="text-sm text-[rgb(var(--muted))] max-w-md mx-auto mb-6 leading-relaxed">
+        <p className="text-sm text-white/55 max-w-md mx-auto mb-6 leading-relaxed">
           One platform. Every role. Every discipline. Intelligence that connects what others can't.
         </p>
-        <a href="mailto:soob@aiunite.ai?subject=Academia Demo Request"
+        <a href="/contact?from=academia"
           className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold transition-opacity hover:opacity-85"
           style={{ background: "#3B82F6", color: "#ffffff" }}>
           Get Started <span>→</span>
         </a>
-        <p className="text-xs text-[rgb(var(--muted))] mt-4">Available for individual researchers and institutions</p>
+        <p className="text-xs text-white/55 mt-4">Available for individual researchers and institutions</p>
       </div>
 
     </div>

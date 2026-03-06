@@ -33,7 +33,7 @@ export default function ContactSection() {
             {/* CTAs */}
             <div className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row">
               <a
-                href="mailto:soob@aiunite.ai?subject=Request%20a%20Demo"
+                href="/contact?from=general"
                 className="cta-primary"
               >
                 Request a Demo <span aria-hidden>→</span>
@@ -56,7 +56,7 @@ export default function ContactSection() {
                 className="contact-link"
               >
                 <Mail className="h-6 w-6 text-[rgb(var(--primary))]" />
-                <span className="text-[rgb(var(--muted))]">soob@aiunite.ai</span>
+                <span className="text-[rgb(var(--muted))]">info@aiunite.ai</span>
               </a>
 
               <a

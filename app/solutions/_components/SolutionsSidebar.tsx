@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export type SolutionsNavItem = {
   id: string;
   label: string;
+  groupLabel?: string; // shown above this item as a section header
 };
 
 type SolutionsSidebarProps = {
@@ -35,10 +36,7 @@ export default function SolutionsSidebar({ items }: SolutionsSidebarProps) {
     const els: HTMLElement[] = [];
     for (const s of items) {
       const el = document.getElementById(s.id);
-      if (el) {
-        els.push(el);
-        observer.observe(el);
-      }
+      if (el) { els.push(el); observer.observe(el); }
     }
 
     return () => {
@@ -49,38 +47,46 @@ export default function SolutionsSidebar({ items }: SolutionsSidebarProps) {
 
   return (
     <aside>
-      <div className="text-sm font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
+      <div className="text-xs font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
         SOLUTIONS MAP
       </div>
 
-      <nav className="mt-5 space-y-2">
+      <nav className="mt-4 space-y-1">
         {items.map((s) => {
           const isActive = active === s.id;
 
           return (
-            <a
-              key={s.id}
-              href={`#${s.id}`}
-              className={[
-                "group flex items-center gap-3 rounded-lg py-2 transition-colors",
-                isActive
-                  ? "text-[rgb(var(--text))]"
-                  : "text-[rgb(var(--muted))] hover:text-[rgb(var(--text))]",
-              ].join(" ")}
-            >
-              <span
+            <div key={s.id}>
+              {/* Group label */}
+              {s.groupLabel && (
+                <div className="pt-4 pb-1 text-[10px] font-semibold tracking-[0.22em] text-[rgb(var(--primary))]">
+                  {s.groupLabel}
+                </div>
+              )}
+
+              <a
+                href={`#${s.id}`}
                 className={[
-                  "h-4 w-[2px] rounded-full transition-colors",
+                  "group flex items-center gap-2.5 rounded-lg py-1.5 transition-colors",
                   isActive
-                    ? "bg-[rgb(var(--primary))]"
-                    : "bg-transparent group-hover:bg-[rgb(var(--border))]",
+                    ? "text-[rgb(var(--text))]"
+                    : "text-[rgb(var(--muted))] hover:text-[rgb(var(--text))]",
                 ].join(" ")}
-                aria-hidden="true"
-              />
-              <span className={["text-sm", isActive ? "font-medium" : ""].join(" ")}>
-                {s.label}
-              </span>
-            </a>
+              >
+                <span
+                  className={[
+                    "h-3.5 w-[2px] rounded-full transition-colors",
+                    isActive
+                      ? "bg-[rgb(var(--primary))]"
+                      : "bg-transparent group-hover:bg-[rgb(var(--border))]",
+                  ].join(" ")}
+                  aria-hidden="true"
+                />
+                <span className={["text-xs", isActive ? "font-medium" : ""].join(" ")}>
+                  {s.label}
+                </span>
+              </a>
+            </div>
           );
         })}
       </nav>

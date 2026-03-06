@@ -6,6 +6,8 @@ import Container from "./Container";
 import Button from "./Button";
 import OnView from "./OnView";
 import CountUpStat from "./CountUpStat";
+//import { Link } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -61,8 +63,12 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <div className="mt-10 flex flex-wrap gap-4">
-                        <Button variant="primary">Request a Demo →</Button>
-                        <Button variant="outline">See How It Works</Button>
+                        <Link href="/contact?from=general" className="hidden md:inline-flex">
+                            <Button variant="primary">Request a Demo → </Button>
+                        </Link>
+                        <Link href="/#ipr" className="hidden md:inline-flex">
+                            <Button variant="outline">See How It Works</Button>
+                        </Link>
                     </div>
 
                     {/* Stats row (count up on scroll into view) */}
@@ -70,7 +76,7 @@ export default function Hero() {
                         <CountUpStat value={15} label="Customized AI Providers" suffix="+" format="int" />
                         <CountUpStat value={209} label="Corporate Analytics" suffix="+" format="int" />
                         <CountUpStat value={6} label="Cognitive Workers" format="int" />
-                        
+
 
                         {/* Static — no count-up, but SAME style */}
                         <CountUpStat text="100" label="Data Isolation" suffix="%" format="int" />

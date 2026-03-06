@@ -38,14 +38,14 @@ const UNITE_QUERIES = [
 
 const HOW_IT_WORKS = [
   { step: "01", title: "One login",               color: "#F59E0B", desc: "No more switching between ChatGPT, Copilot, Jasper, and five other tabs. One place for every question, every role." },
-  { step: "02", title: "It learns your business", color: "#2E75B6", desc: "AI Unite remembers your deals, your team, your products, your decisions. Ask a marketing question — it already knows your sales pipeline." },
-  { step: "03", title: "15+ AI models, best answer", color: "#2ECC71", desc: "We orchestrate responses from the best AI models for each question. You get the smartest answer, not just one model's guess." },
+  { step: "02", title: "It learns your business", color: "#60a5fa", desc: "AI Unite remembers your deals, your team, your products, your decisions. Ask a marketing question — it already knows your sales pipeline." },
+  { step: "03", title: "15+ AI models, best answer", color: "#34d399", desc: "We orchestrate responses from the best AI models for each question. You get the smartest answer, not just one model's guess." },
 ];
 
 const GROWTH_STAGES = [
   { size: "1–10",   label: "Founding team", color: "#F59E0B", items: ["Replaces 5–7 AI subscriptions", "Knows every hat you wear", "Every decision remembered"] },
-  { size: "10–50",  label: "Finding PMF",   color: "#2E75B6", items: ["New hires inherit company knowledge", "Translates between departments", "Surfaces collaboration gaps"] },
-  { size: "50–200", label: "Scaling",       color: "#2ECC71", items: ["Enterprise intelligence, startup cost", "Zero migration from day one", "Knowledge never walks out the door"] },
+  { size: "10–50",  label: "Finding PMF",   color: "#60a5fa", items: ["New hires inherit company knowledge", "Translates between departments", "Surfaces collaboration gaps"] },
+  { size: "50–200", label: "Scaling",       color: "#34d399", items: ["Enterprise intelligence, startup cost", "Zero migration from day one", "Knowledge never walks out the door"] },
 ];
 
 // ─── TypeWriter ───────────────────────────────────────────────────────────────
@@ -104,7 +104,7 @@ function ToolSprawl() {
           }}
         >
           <span className="w-2 h-2 rounded-full shrink-0" style={{ background: tool.color }} />
-          <span className="text-[rgb(var(--text))]">{tool.name}</span>
+          <span className="text-white/90">{tool.name}</span>
           <span className="font-semibold" style={{ color: "#EF4444" }}>{tool.price}</span>
         </div>
       ))}
@@ -143,17 +143,17 @@ function ChaosDemo() {
         <span style={{ fontSize: 10, color: role.color, fontWeight: 700, letterSpacing: "0.12em" }}>
           YOU AS {q.role.toUpperCase()}
         </span>
-        <span className="text-[10px] text-[rgb(var(--muted))]">→ {q.tool}</span>
+        <span className="text-[10px] text-white/55">→ {q.tool}</span>
       </div>
 
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">You ask</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">You ask</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
 
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.14)" }}>
         <div className="text-[10px] mb-1.5 font-medium uppercase tracking-wider" style={{ color: "#EF4444" }}>⚠️ AI responds</div>
-        <div className="text-xs leading-relaxed italic text-[rgb(var(--muted))]">
+        <div className="text-xs leading-relaxed italic text-white/55">
           <TypeWriter text={q.result} speed={15} delay={600} onDone={() => setTyping(false)} key={step} />
         </div>
       </div>
@@ -172,7 +172,7 @@ function ChaosDemo() {
 function UniteDemo() {
   const [step, setStep] = useState(0);
   const [typing, setTyping] = useState(true);
-  const green = "#2ECC71";
+  const green = "#34d399";
 
   useEffect(() => {
     if (typing) return;
@@ -198,9 +198,9 @@ function UniteDemo() {
         </span>
       </div>
 
-      <div className="rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.03] px-4 py-3">
-        <div className="text-[10px] text-[rgb(var(--muted))] mb-1 font-medium uppercase tracking-wider">You ask</div>
-        <div className="text-sm text-[rgb(var(--text))] leading-relaxed">{q.q}</div>
+      <div className="rounded-xl border border-white/10/50 bg-white/[0.07] px-4 py-3">
+        <div className="text-[10px] text-white/55 mb-1 font-medium uppercase tracking-wider">You ask</div>
+        <div className="text-sm text-white/90 leading-relaxed">{q.q}</div>
       </div>
 
       <div className="rounded-xl px-4 py-3" style={{ background: "rgba(46,204,113,0.04)", border: "1px solid rgba(46,204,113,0.14)" }}>
@@ -208,7 +208,7 @@ function UniteDemo() {
           <span style={{ width: 5, height: 5, borderRadius: "50%", background: green, boxShadow: `0 0 8px rgba(46,204,113,0.5)`, display: "inline-block" }} />
           AI Unite responds
         </div>
-        <div className="text-xs leading-relaxed text-[rgb(var(--text))]">
+        <div className="text-xs leading-relaxed text-white/90">
           <TypeWriter text={q.result} speed={9} delay={400} onDone={() => setTyping(false)} key={step + "u"} />
         </div>
       </div>
@@ -231,7 +231,7 @@ function ConnectedBrain() {
     return () => clearInterval(i);
   }, []);
 
-  const green = "#2ECC71";
+  const green = "#34d399";
   const size = 280;
   const cx = size / 2;
   const cy = size / 2;
@@ -312,7 +312,7 @@ function ConnectedBrain() {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="text-[10px] font-semibold tracking-[0.22em] text-[rgb(var(--primary))] mb-3 uppercase">
+    <div className="text-[10px] font-semibold tracking-[0.22em] mb-3 uppercase" style={{ color: "#60a5fa" }}>
       {children}
     </div>
   );
@@ -320,21 +320,21 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] leading-snug">
+    <h3 className="text-xl md:text-2xl font-semibold text-white/90 leading-snug">
       {children}
     </h3>
   );
 }
 
 function Divider() {
-  return <div className="h-px w-full bg-[rgb(var(--border))]/40 my-12" />;
+  return <div className="h-px w-full bg-white/10 my-12" />;
 }
 
 // ─── Main export ──────────────────────────────────────────────────────────────
 
 export default function SMBDeepDive() {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #0a1a0f 0%, #0d2115 55%, #081a0c 100%)", borderRadius: 16, padding: "32px 24px" }}>
 
       {/* 1 ── THE PROBLEM ───────────────────────────────────────────────────── */}
       <div className="mb-12">
@@ -343,7 +343,7 @@ export default function SMBDeepDive() {
           Six roles. Six tools.{" "}
           <span style={{ color: "#EF4444" }}>Zero shared context.</span>
         </SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Every AI you use starts with a blank slate. It doesn't know your team, your pipeline,
           your product, or what you promised a client yesterday. You re-explain your business
           dozens of times a day.
@@ -351,7 +351,7 @@ export default function SMBDeepDive() {
 
         <div className="mt-8 grid gap-10 lg:grid-cols-2 items-start">
           <div>
-            <p className="text-xs font-semibold text-[rgb(var(--muted))] uppercase tracking-wider mb-4">
+            <p className="text-xs font-semibold text-white/55 uppercase tracking-wider mb-4">
               Tool sprawl adding up
             </p>
             <ToolSprawl />
@@ -367,11 +367,11 @@ export default function SMBDeepDive() {
             { number: "89%",   label: "of SMBs use AI daily",                    color: "#F59E0B" },
             { number: "4–7",   label: "AI subscriptions per company",             color: "#EF4444" },
             { number: "$153+", label: "per person, per month",                    color: "#EF4444" },
-            { number: "0",     label: "of those tools talk to each other",        color: "rgb(var(--muted))" },
+            { number: "0",     label: "of those tools talk to each other",        color: "rgba(255,255,255,0.50)" },
           ].map(({ number, label, color }) => (
             <div key={number} className="text-center">
               <div className="text-2xl md:text-3xl font-bold leading-none mb-2" style={{ color }}>{number}</div>
-              <div className="text-xs text-[rgb(var(--muted))] leading-snug">{label}</div>
+              <div className="text-xs text-white/55 leading-snug">{label}</div>
             </div>
           ))}
         </div>
@@ -384,13 +384,13 @@ export default function SMBDeepDive() {
         <SectionLabel>One platform for everything you do</SectionLabel>
         <SectionHeading>
           AI that actually knows{" "}
-          <span style={{ color: "#2ECC71" }}>your business.</span>
+          <span style={{ color: "#34d399" }}>your business.</span>
         </SectionHeading>
 
         <div className="mt-8 grid gap-10 lg:grid-cols-2 items-center">
           <div className="flex flex-col items-center gap-3">
             <ConnectedBrain />
-            <p className="text-xs italic text-center" style={{ color: "#2ECC71" }}>
+            <p className="text-xs italic text-center" style={{ color: "#34d399" }}>
               Every role connected. One brain that knows it all.
             </p>
           </div>
@@ -407,12 +407,12 @@ export default function SMBDeepDive() {
 
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {HOW_IT_WORKS.map((item) => (
-            <div key={item.step} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-5">
-              <div className="text-3xl font-bold mb-2 leading-none select-none" style={{ color: `${item.color}25` }}>
+            <div key={item.step} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-5">
+              <div className="text-3xl font-bold mb-2 leading-none select-none" style={{ color: `${item.color}70` }}>
                 {item.step}
               </div>
               <div className="text-sm font-semibold mb-3" style={{ color: item.color }}>{item.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{item.desc}</p>
+              <p className="text-xs leading-relaxed text-white/55">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -424,28 +424,28 @@ export default function SMBDeepDive() {
       <div className="mb-12">
         <SectionLabel>Deployment path</SectionLabel>
         <SectionHeading>Grows with you</SectionHeading>
-        <p className="mt-2 text-sm text-[rgb(var(--muted))]">The same platform from day one to day one thousand.</p>
+        <p className="mt-2 text-sm text-white/55">The same platform from day one to day one thousand.</p>
 
         <div className="mt-8 grid lg:grid-cols-3 gap-4">
           {GROWTH_STAGES.map((stage, i) => (
             <div key={stage.size} className="relative">
               {i < 2 && (
-                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-[rgb(var(--border))]/40 bg-[rgb(var(--bg))] text-[rgb(var(--muted))] text-xs">
+                <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 rounded-full border border-white/10 bg-white/5 text-white/55 text-xs">
                   →
                 </div>
               )}
               <div
-                className="h-full rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] overflow-hidden"
+                className="h-full rounded-2xl border border-white/10/60 bg-white/[0.07] overflow-hidden"
                 style={{ borderTop: `2.5px solid ${stage.color}` }}
               >
                 <div className="p-6" style={{ background: `linear-gradient(180deg, ${stage.color}07 0%, transparent 55%)` }}>
                   <div className="text-2xl font-bold mb-1" style={{ color: stage.color }}>{stage.size}</div>
-                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-[rgb(var(--muted))]">{stage.label}</div>
+                  <div className="text-[9px] uppercase tracking-[0.2em] font-semibold mb-5 text-white/55">{stage.label}</div>
                   <ul className="space-y-3">
                     {stage.items.map((item, j) => (
                       <li key={j} className="flex gap-2.5 items-start">
                         <span className="mt-[5px] h-1.5 w-1.5 rounded-full shrink-0" style={{ background: stage.color }} />
-                        <span className="text-xs leading-relaxed text-[rgb(var(--text))]">{item}</span>
+                        <span className="text-xs leading-relaxed text-white/90">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -464,20 +464,20 @@ export default function SMBDeepDive() {
 
       {/* 6 ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-8 py-10 text-center" style={{ background: "rgba(46,204,113,0.04)", border: "1px solid rgba(46,204,113,0.15)" }}>
-        <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] mb-3 leading-snug">
+        <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-3 leading-snug">
           Stop re-explaining your business<br />to your AI.
         </h3>
-        <p className="text-sm text-[rgb(var(--muted))] max-w-md mx-auto mb-6 leading-relaxed">
+        <p className="text-sm text-white/55 max-w-md mx-auto mb-6 leading-relaxed">
           One platform. Every role. Full context. AI that works as hard as you do.
         </p>
         <a
-          href="mailto:soob@aiunite.ai?subject=SMB Demo Request"
+          href="/contact?from=smb"
           className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold transition-opacity hover:opacity-85"
           style={{ background: "rgb(var(--primary))", color: "rgb(var(--bg))" }}
         >
           Get Started <span>→</span>
         </a>
-        <p className="text-xs text-[rgb(var(--muted))] mt-4">No credit card required</p>
+        <p className="text-xs text-white/55 mt-4">No credit card required</p>
       </div>
 
     </div>

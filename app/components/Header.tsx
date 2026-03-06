@@ -111,7 +111,9 @@ export default function Header() {
 
         {/* Right: CTA */}
         <div className="flex w-48 items-center justify-end">
-          <Button className="px-5 py-2 text-sm">Contact</Button>
+          <Link href="/contact?from=general" className="hidden md:inline-flex">
+            <Button className="px-5 py-2 text-sm">Contact</Button>
+          </Link>
         </div>
       </Container>
     </header>

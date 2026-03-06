@@ -10,12 +10,12 @@ import APIDeepDive from "./_components/APIDeepDive";
 import ExtensionDeepDive from "./_components/ExtensionDeepDive";
 
 const NAV: SolutionsNavItem[] = [
-  { id: "enterprise", label: "Enterprise" },
-  { id: "smb", label: "SMB" },
-  { id: "academia", label: "Academia" },
-  { id: "platform", label: "Platform" },
-  { id: "api", label: "API" },
-  { id: "extension", label: "Extension" },
+  { id: "enterprise", label: "Enterprise", groupLabel: "BY AUDIENCE" },
+  { id: "smb",        label: "SMB" },
+  { id: "academia",   label: "Academia" },
+  { id: "platform",   label: "Platform",  groupLabel: "BY ACCESS" },
+  { id: "api",        label: "API" },
+  { id: "extension",  label: "Extension" },
 ];
 
 function MobileAnchors() {

@@ -81,14 +81,14 @@ const COMPARE_OURS   = ["4+", "✓", "✓", "✓", "✓", "✓", "✓", "✓"];
 
 // ─── Primitives ───────────────────────────────────────────────────────────────
 
-function SectionLabel({ children, color = "rgb(var(--primary))" }: { children: React.ReactNode; color?: string }) {
+function SectionLabel({ children, color = "#f59e0b" }: { children: React.ReactNode; color?: string }) {
   return <div className="text-[10px] font-semibold tracking-[0.22em] mb-3 uppercase" style={{ color }}>{children}</div>;
 }
 function SectionHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] leading-snug">{children}</h3>;
+  return <h3 className="text-xl md:text-2xl font-semibold text-white/90 leading-snug">{children}</h3>;
 }
 function Divider() {
-  return <div className="h-px w-full bg-[rgb(var(--border))]/40 my-12" />;
+  return <div className="h-px w-full bg-white/10 my-12" />;
 }
 
 // ─── Extension popup mockup ───────────────────────────────────────────────────
@@ -152,20 +152,20 @@ function ExtPopup() {
 
 export default function ExtensionDeepDive() {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #1a1200 0%, #241a00 55%, #1a1400 100%)", borderRadius: 16, padding: "32px 24px" }}>
 
       {/* 0 ── POPUP PREVIEW ─────────────────────────────────────────────────── */}
       <div className="mb-12">
         <SectionLabel color="#f59e0b">By Access — Extension</SectionLabel>
         <SectionHeading>Multi-AI intelligence. One click away.</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Install the Chrome extension. Ask any question from any website. Get a synthesized answer from multiple AI providers — no account required, no cost, no setup.
         </p>
         <div className="flex items-center gap-3 mt-5 mb-8 flex-wrap">
           <a href="#" className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" style={{ background: "linear-gradient(135deg,#f59e0b,#f97316)" }}>
             📥 Install Free Extension
           </a>
-          <span className="text-xs text-[rgb(var(--muted))]">Chrome · Free forever to start</span>
+          <span className="text-xs text-white/55">Chrome · Free forever to start</span>
         </div>
         <div className="flex gap-2 flex-wrap mb-10">
           {["Free to Install","No Account Needed","Multi-AI Synthesis","Works on Any Site"].map(p => (
@@ -181,7 +181,7 @@ export default function ExtensionDeepDive() {
       <div className="mb-12">
         <SectionLabel color="#f59e0b">How It Works</SectionLabel>
         <SectionHeading>From question to intelligence in seconds</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Click the extension icon from any browser tab. Ask anything. Multiple AI providers are queried simultaneously — you get the best answer, not just the first one.
         </p>
         <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-6 relative">
@@ -192,8 +192,8 @@ export default function ExtensionDeepDive() {
               <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-5" style={{ background: `linear-gradient(135deg, ${step.color}, ${step.color}cc)` }}>
                 {step.num}
               </div>
-              <div className="text-sm font-semibold text-[rgb(var(--text))] mb-1">{step.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] px-2">{step.desc}</p>
+              <div className="text-sm font-semibold text-white/90 mb-1">{step.title}</div>
+              <p className="text-xs leading-relaxed text-white/55 px-2">{step.desc}</p>
             </div>
           ))}
         </div>
@@ -205,24 +205,24 @@ export default function ExtensionDeepDive() {
       <div className="mb-12">
         <SectionLabel color="#22c55e">What You Get — Free</SectionLabel>
         <SectionHeading>10 queries a day. Zero cost.</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Every user gets daily access to multi-AI synthesis. No credit card. No sign-up. Just install and start asking.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {FREE_TIERS.map(tier => (
-            <div key={tier.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6 relative overflow-hidden" style={{ borderTop: `2.5px solid ${tier.color}` }}>
+            <div key={tier.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6 relative overflow-hidden" style={{ borderTop: `2.5px solid ${tier.color}` }}>
               <span className="inline-block text-[9px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4" style={{ background: `${tier.color}14`, color: tier.color }}>
                 {tier.range}
               </span>
-              <div className="text-base font-semibold text-[rgb(var(--text))] mb-2">{tier.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-5">{tier.desc}</p>
+              <div className="text-base font-semibold text-white/90 mb-2">{tier.title}</div>
+              <p className="text-xs leading-relaxed text-white/55 mb-5">{tier.desc}</p>
               <div className="space-y-2.5">
                 {tier.features.map(f => (
                   <div key={f.text} className="flex items-start gap-2.5">
                     <span className="text-xs font-bold mt-0.5 shrink-0" style={{ color: f.check ? "#22c55e" : "#94a3b8" }}>
                       {f.check ? "✓" : "🔒"}
                     </span>
-                    <span className="text-xs leading-snug" style={{ color: f.check ? "rgb(var(--muted))" : "#94a3b8" }}>{f.text}</span>
+                    <span className="text-xs leading-snug" style={{ color: f.check ? "rgba(255,255,255,0.50)" : "#94a3b8" }}>{f.text}</span>
                   </div>
                 ))}
               </div>
@@ -242,15 +242,15 @@ export default function ExtensionDeepDive() {
       <div className="mb-12">
         <SectionLabel color="#f59e0b">Use It Anywhere</SectionLabel>
         <SectionHeading>Intelligence on top of whatever you're doing</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           The extension sits in your browser toolbar. Click it from any tab — your CRM, your docs, your email, your competitor's website. No context switching.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {EVERYWHERE.map(e => (
-            <div key={e.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6 text-center">
+            <div key={e.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6 text-center">
               <div className="text-3xl mb-3">{e.icon}</div>
-              <div className="text-sm font-semibold text-[rgb(var(--text))] mb-2">{e.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{e.desc}</p>
+              <div className="text-sm font-semibold text-white/90 mb-2">{e.title}</div>
+              <p className="text-xs leading-relaxed text-white/55">{e.desc}</p>
             </div>
           ))}
         </div>
@@ -262,26 +262,26 @@ export default function ExtensionDeepDive() {
       <div className="mb-12">
         <SectionLabel color="#3b82f6">For Teams & Enterprise</SectionLabel>
         <SectionHeading>Deploy intelligence across your organization</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Every employee gets AI Unite in their browser. Queries feed into your CorporateBrain. Intelligence compounds across the organization.
         </p>
 
         <div className="mt-8 grid gap-8 lg:grid-cols-2 items-start">
           {/* Left: features */}
           <div>
-            <p className="text-sm font-semibold text-[rgb(var(--text))] mb-5 leading-snug">
+            <p className="text-sm font-semibold text-white/90 mb-5 leading-snug">
               Your team already uses a browser.<br />Now it has a brain.
             </p>
-            <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-6">
+            <p className="text-xs leading-relaxed text-white/55 mb-6">
               Roll out the extension org-wide. Employees ask questions from whatever tool they're already using — Salesforce, Jira, Confluence, Google Docs, internal portals. No new software to learn.
             </p>
             <div className="space-y-3">
               {ENTERPRISE_FEATURES.map(f => (
-                <div key={f.title} className="flex items-start gap-3 p-4 rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.02]">
+                <div key={f.title} className="flex items-start gap-3 p-4 rounded-xl border border-white/10/50 bg-white/[0.06]">
                   <div className="w-9 h-9 rounded-lg flex items-center justify-center text-base shrink-0" style={{ background: `${f.color}14` }}>{f.icon}</div>
                   <div>
-                    <div className="text-xs font-semibold text-[rgb(var(--text))] mb-0.5">{f.title}</div>
-                    <p className="text-xs text-[rgb(var(--muted))] leading-snug">{f.desc}</p>
+                    <div className="text-xs font-semibold text-white/90 mb-0.5">{f.title}</div>
+                    <p className="text-xs text-white/55 leading-snug">{f.desc}</p>
                   </div>
                 </div>
               ))}
@@ -289,28 +289,28 @@ export default function ExtensionDeepDive() {
           </div>
 
           {/* Right: employee dashboard */}
-          <div className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
-            <div className="flex items-center justify-between mb-5 pb-4 border-b border-[rgb(var(--border))]/40">
-              <span className="text-sm font-semibold text-[rgb(var(--text))]">Extension — Acme Corp</span>
+          <div className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6">
+            <div className="flex items-center justify-between mb-5 pb-4 border-b border-white/10/40">
+              <span className="text-sm font-semibold text-white/90">Extension — Acme Corp</span>
               <span className="text-[9px] font-bold text-white px-3 py-1 rounded-full" style={{ background: "#22c55e" }}>Enterprise</span>
             </div>
             <div className="space-y-2.5 mb-5">
               {EMPLOYEES.map(emp => (
-                <div key={emp.name} className="flex items-center gap-3 p-3 rounded-xl border border-[rgb(var(--border))]/40 bg-white/[0.015]">
+                <div key={emp.name} className="flex items-center gap-3 p-3 rounded-xl border border-white/10/40 bg-white/[0.05]">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0" style={{ background: emp.color }}>{emp.initials}</div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs font-semibold text-[rgb(var(--text))]">{emp.name}</div>
-                    <div className="text-[10px] text-[rgb(var(--muted))]">{emp.role}</div>
+                    <div className="text-xs font-semibold text-white/90">{emp.name}</div>
+                    <div className="text-[10px] text-white/55">{emp.role}</div>
                   </div>
-                  <div className="text-[10px] font-mono font-semibold text-[rgb(var(--muted))] shrink-0">{emp.queries}</div>
+                  <div className="text-[10px] font-mono font-semibold text-white/55 shrink-0">{emp.queries}</div>
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-3 gap-2 pt-4 border-t border-[rgb(var(--border))]/40">
+            <div className="grid grid-cols-3 gap-2 pt-4 border-t border-white/10/40">
               {[{ num: "83", label: "Queries today" }, { num: "92%", label: "Consensus avg" }, { num: "4.1s", label: "Avg response" }].map(s => (
-                <div key={s.label} className="text-center p-3 rounded-lg bg-white/[0.02]">
-                  <div className="text-lg font-bold font-mono text-[rgb(var(--text))]">{s.num}</div>
-                  <div className="text-[9px] text-[rgb(var(--muted))] mt-0.5">{s.label}</div>
+                <div key={s.label} className="text-center p-3 rounded-lg bg-white/[0.06]">
+                  <div className="text-lg font-bold font-mono text-white/90">{s.num}</div>
+                  <div className="text-[9px] text-white/55 mt-0.5">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -324,18 +324,18 @@ export default function ExtensionDeepDive() {
       <div className="mb-12">
         <SectionLabel color="#8b5cf6">Why This Is Different</SectionLabel>
         <SectionHeading>Not another ChatGPT wrapper</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Single-AI extensions give you one model's opinion. AI Unite gives you consensus intelligence from all of them.
         </p>
         <div className="mt-8 grid gap-5 lg:grid-cols-2">
           {/* Theirs */}
-          <div className="rounded-2xl border border-[rgb(var(--border))]/50 bg-white/[0.015] p-6 opacity-60">
-            <div className="text-sm font-semibold text-[rgb(var(--text))] mb-5">Single-AI Extensions</div>
-            <div className="divide-y divide-[rgb(var(--border))]/30">
+          <div className="rounded-2xl border border-white/10/50 bg-white/[0.05] p-6 opacity-60">
+            <div className="text-sm font-semibold text-white/90 mb-5">Single-AI Extensions</div>
+            <div className="divide-y divide-white/10">
               {COMPARE_ROWS.map((row, i) => (
                 <div key={row} className="flex items-center justify-between py-3">
-                  <span className="text-xs text-[rgb(var(--muted))]">{row}</span>
-                  <span className="text-xs font-semibold" style={{ color: COMPARE_THEIRS[i] === "✗" ? "#cbd5e1" : "rgb(var(--text))" }}>{COMPARE_THEIRS[i]}</span>
+                  <span className="text-xs text-white/55">{row}</span>
+                  <span className="text-xs font-semibold" style={{ color: COMPARE_THEIRS[i] === "✗" ? "#cbd5e1" : "rgba(255,255,255,0.90)" }}>{COMPARE_THEIRS[i]}</span>
                 </div>
               ))}
             </div>
@@ -346,11 +346,11 @@ export default function ExtensionDeepDive() {
             <div className="absolute top-0 left-0 right-0 text-center text-[9px] font-bold uppercase tracking-widest py-1.5 text-white" style={{ background: "linear-gradient(90deg,#f59e0b,#f97316)" }}>
               AI UNITE
             </div>
-            <div className="text-sm font-semibold text-[rgb(var(--text))] mb-5 mt-5">AI Unite Extension</div>
-            <div className="divide-y divide-[rgb(var(--border))]/30">
+            <div className="text-sm font-semibold text-white/90 mb-5 mt-5">AI Unite Extension</div>
+            <div className="divide-y divide-white/10">
               {COMPARE_ROWS.map((row, i) => (
                 <div key={row} className="flex items-center justify-between py-3">
-                  <span className="text-xs text-[rgb(var(--muted))]">{row}</span>
+                  <span className="text-xs text-white/55">{row}</span>
                   <span className="text-xs font-bold" style={{ color: "#22c55e" }}>{COMPARE_OURS[i]}</span>
                 </div>
               ))}
@@ -363,14 +363,14 @@ export default function ExtensionDeepDive() {
 
       {/* 6 ── CTA ───────────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-8 py-10 text-center" style={{ background: "rgba(245,158,11,0.04)", border: "1px solid rgba(245,158,11,0.18)" }}>
-        <p className="text-base italic text-[rgb(var(--muted))] max-w-lg mx-auto mb-6 leading-relaxed">
+        <p className="text-base italic text-white/55 max-w-lg mx-auto mb-6 leading-relaxed">
           "Every other AI extension gives you one model's guess. This one gives you the room's consensus."
         </p>
         <div className="flex items-center justify-center gap-3 flex-wrap">
           <a href="#" className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85" style={{ background: "linear-gradient(135deg,#f59e0b,#f97316)" }}>
             📥 Install Free Extension
           </a>
-          <a href="mailto:soob@aiunite.ai?subject=Extension Enterprise" className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-medium transition-colors" style={{ border: "1px solid rgba(var(--border),0.5)", color: "rgb(var(--muted))" }}>
+          <a href="/contact?from=extension" className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-medium transition-colors" style={{ border: "1px solid rgba(255,255,255,0.15)", color: "rgba(255,255,255,0.50)" }}>
             Contact Sales
           </a>
         </div>

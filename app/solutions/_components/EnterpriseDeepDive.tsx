@@ -472,7 +472,7 @@ export default function EnterpriseDeepDive() {
           vendor-neutral, enterprise-grade.
         </p>
         <a
-          href="mailto:soob@aiunite.ai?subject=Enterprise Demo Request"
+          href="/contact?from=enterprise"
           className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold transition-opacity hover:opacity-85"
           style={{ background: "rgb(var(--primary))", color: "rgb(var(--bg))" }}
         >

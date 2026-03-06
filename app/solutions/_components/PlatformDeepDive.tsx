@@ -84,13 +84,13 @@ const DASH_NODES = [
 // ─── Primitives ───────────────────────────────────────────────────────────────
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <div className="text-[10px] font-semibold tracking-[0.22em] text-[rgb(var(--primary))] mb-3 uppercase">{children}</div>;
+  return <div className="text-[10px] font-semibold tracking-[0.22em] mb-3 uppercase" style={{ color: "#60a5fa" }}>{children}</div>;
 }
 function SectionHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] leading-snug">{children}</h3>;
+  return <h3 className="text-xl md:text-2xl font-semibold text-white/90 leading-snug">{children}</h3>;
 }
 function Divider() {
-  return <div className="h-px w-full bg-[rgb(var(--border))]/40 my-12" />;
+  return <div className="h-px w-full bg-white/10 my-12" />;
 }
 
 // ─── Interactive query mockup ─────────────────────────────────────────────────
@@ -235,14 +235,14 @@ function QueryMockup() {
             <div style={{ display:"flex",alignItems:"center",gap:6,marginBottom:7,flexWrap:"wrap" }}>
               <span style={{ fontSize:8,fontWeight:700,color:"#94a3b8",letterSpacing:"0.12em",textTransform:"uppercase",marginRight:3,whiteSpace:"nowrap" }}>Thinking Style</span>
               {["Conservative","Explorer","Contrarian","Visionary","Academic"].map(s => (
-                <button key={s} onClick={()=>setActiveStyle(s)} style={pill(activeStyle===s)}>{s}</button>
+                <button key={s} onClick={()=>setActiveStyle(s)} style={pill(activeStyle===s)} suppressHydrationWarning >{s}</button>
               ))}
             </div>
             <div style={{ display:"flex",alignItems:"center",gap:14,flexWrap:"wrap",marginBottom:12 }}>
               <div style={{ display:"flex",alignItems:"center",gap:5,flexWrap:"wrap" }}>
                 <span style={{ fontSize:8,fontWeight:700,color:"#94a3b8",letterSpacing:"0.12em",textTransform:"uppercase",whiteSpace:"nowrap" }}>Response Type</span>
                 {["Synthesis","Intelligence","Comparison"].map(t => (
-                  <button key={t} onClick={()=>setActiveType(t)} style={pill(activeType===t)}>{t}</button>
+                  <button key={t} onClick={()=>setActiveType(t)} style={pill(activeType===t)}suppressHydrationWarning>{t}</button>
                 ))}
               </div>
               <div style={{ display:"flex",alignItems:"center",gap:5 }}>
@@ -406,26 +406,26 @@ function ExecutiveDashboard() {
 
 export default function PlatformDeepDive() {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(135deg, #1a0a2e 0%, #1f0f38 55%, #160828 100%)", borderRadius: 16, padding: "32px 24px" }}>
 
       {/* 1 ── HOW IT WORKS ────────────────────────────────────────────────── */}
       <div className="mb-12">
         <SectionLabel>How It Works</SectionLabel>
         <SectionHeading>One query bar. Total control.</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           You type a question. You choose how deep, how creative, and what format. JASU queries multiple AI providers simultaneously, synthesizes the best answer, and remembers what it learns about you.
         </p>
         <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           {FLOW_STEPS.map((step, i) => (
             <div key={step.num} className="relative text-center">
               {i < FLOW_STEPS.length - 1 && (
-                <div className="hidden lg:block absolute top-5 -right-2 text-[rgb(var(--border))] text-lg z-10">→</div>
+                <div className="hidden lg:block absolute top-5 -right-2 text-white/20 text-lg z-10">→</div>
               )}
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full mb-3 text-sm font-bold text-white" style={{ background:"linear-gradient(135deg,#3b82f6,#2563eb)" }}>
                 {step.num}
               </div>
-              <div className="text-sm font-semibold text-[rgb(var(--text))] mb-1">{step.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{step.desc}</p>
+              <div className="text-sm font-semibold text-white/90 mb-1">{step.title}</div>
+              <p className="text-xs leading-relaxed text-white/55">{step.desc}</p>
             </div>
           ))}
         </div>
@@ -438,23 +438,23 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Cognitive Modes</SectionLabel>
         <SectionHeading>Choose your depth</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Not every question needs the same level of analysis. Cognitive modes control how many AI providers are consulted, how much cross-referencing happens, and how fast you get your answer.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {COGNITIVE_MODES.map(m => (
-            <div key={m.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
+            <div key={m.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6">
               <div className="text-2xl mb-3">{m.icon}</div>
-              <div className="text-base font-semibold text-[rgb(var(--text))] mb-1">{m.title}</div>
+              <div className="text-base font-semibold text-white/90 mb-1">{m.title}</div>
               <span className="inline-block text-[9px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded mb-3" style={{ background:`${m.tagColor}15`,color:m.tagColor }}>{m.tag}</span>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-4">{m.desc}</p>
-              <div className="rounded-xl bg-white/[0.03] border border-[rgb(var(--border))]/40 px-3 py-2.5 mb-4">
-                <div className="text-[9px] font-semibold uppercase tracking-wider text-[rgb(var(--muted))] mb-1">Best for</div>
-                <div className="text-xs italic text-[rgb(var(--muted))]">{m.example}</div>
+              <p className="text-xs leading-relaxed text-white/55 mb-4">{m.desc}</p>
+              <div className="rounded-xl bg-white/[0.07] border border-white/10/40 px-3 py-2.5 mb-4">
+                <div className="text-[9px] font-semibold uppercase tracking-wider text-white/55 mb-1">Best for</div>
+                <div className="text-xs italic text-white/55">{m.example}</div>
               </div>
-              <div className="flex gap-4 pt-3 border-t border-[rgb(var(--border))]/40">
-                <div><div className="text-base font-bold text-[rgb(var(--text))]">{m.providers}</div><div className="text-[9px] text-[rgb(var(--muted))]">Providers</div></div>
-                <div><div className="text-base font-bold text-[rgb(var(--text))]">{m.speed}</div><div className="text-[9px] text-[rgb(var(--muted))]">Response</div></div>
+              <div className="flex gap-4 pt-3 border-t border-white/10/40">
+                <div><div className="text-base font-bold text-white/90">{m.providers}</div><div className="text-[9px] text-white/55">Providers</div></div>
+                <div><div className="text-base font-bold text-white/90">{m.speed}</div><div className="text-[9px] text-white/55">Response</div></div>
               </div>
             </div>
           ))}
@@ -467,17 +467,17 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Thinking Styles</SectionLabel>
         <SectionHeading>Shape how intelligence thinks</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Same question, five different lenses. Thinking styles change the reasoning framework — not just the tone, but the actual logic, risk weighting, and perspective the system uses.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {THINKING_STYLES.map(s => (
-            <div key={s.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-5 text-center" style={{ borderTop:`2.5px solid ${s.color}` }}>
+            <div key={s.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-5 text-center" style={{ borderTop:`2.5px solid ${s.color}` }}>
               <div className="text-2xl mb-3">{s.icon}</div>
               <div className="text-sm font-semibold mb-2" style={{ color:s.color }}>{s.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-4">{s.desc}</p>
-              <div className="text-[9px] text-[rgb(var(--muted))] pt-3 border-t border-[rgb(var(--border))]/40 leading-snug">
-                <span className="font-semibold text-[rgb(var(--text))]">Best for:</span> {s.best}
+              <p className="text-xs leading-relaxed text-white/55 mb-4">{s.desc}</p>
+              <div className="text-[9px] text-white/55 pt-3 border-t border-white/10/40 leading-snug">
+                <span className="font-semibold text-white/90">Best for:</span> {s.best}
               </div>
             </div>
           ))}
@@ -490,19 +490,19 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Response Types</SectionLabel>
         <SectionHeading>Choose your output format</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           The same answer delivered as a unified narrative, a transparent intelligence report, or a structured comparison. You decide what's most useful.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {RESPONSE_TYPES.map(r => (
-            <div key={r.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
+            <div key={r.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6">
               <div className="text-2xl mb-3">{r.icon}</div>
-              <div className="text-base font-semibold text-[rgb(var(--text))] mb-1">{r.title}</div>
+              <div className="text-base font-semibold text-white/90 mb-1">{r.title}</div>
               <span className="inline-block text-[9px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded mb-3" style={{ background:`${r.tagColor}15`,color:r.tagColor }}>{r.tag}</span>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-4">{r.desc}</p>
-              <div className="rounded-xl bg-white/[0.03] border border-[rgb(var(--border))]/40 px-3 py-2.5">
-                <div className="text-[9px] font-semibold uppercase tracking-wider text-[rgb(var(--muted))] mb-1">You see</div>
-                <div className="text-xs italic text-[rgb(var(--muted))]">{r.example}</div>
+              <p className="text-xs leading-relaxed text-white/55 mb-4">{r.desc}</p>
+              <div className="rounded-xl bg-white/[0.07] border border-white/10/40 px-3 py-2.5">
+                <div className="text-[9px] font-semibold uppercase tracking-wider text-white/55 mb-1">You see</div>
+                <div className="text-xs italic text-white/55">{r.example}</div>
               </div>
             </div>
           ))}
@@ -515,15 +515,15 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Built Into the Platform</SectionLabel>
         <SectionHeading>Not just a query bar</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Every feature a team needs to adopt AI as infrastructure — not as a novelty.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map(f => (
-            <div key={f.title} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6">
+            <div key={f.title} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-4" style={{ background:`${f.color}14` }}>{f.icon}</div>
-              <div className="text-sm font-semibold text-[rgb(var(--text))] mb-2">{f.title}</div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{f.desc}</p>
+              <div className="text-sm font-semibold text-white/90 mb-2">{f.title}</div>
+              <p className="text-xs leading-relaxed text-white/55">{f.desc}</p>
             </div>
           ))}
         </div>
@@ -535,22 +535,22 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Who Sees What</SectionLabel>
         <SectionHeading>One platform, every level</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Everyone uses the query bar. What changes is the visibility, the controls, and the dashboards.
         </p>
         <div className="mt-8 space-y-3">
           {ROLE_TIERS.map(tier => (
-            <div key={tier.badge} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-5 grid gap-4 sm:grid-cols-[160px_1fr]">
+            <div key={tier.badge} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-5 grid gap-4 sm:grid-cols-[160px_1fr]">
               <div>
                 <span className="inline-block text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded mb-2" style={{ background:`${tier.badgeColor}16`,color:tier.badgeColor }}>{tier.badge}</span>
-                <div className="text-sm font-semibold text-[rgb(var(--text))]">{tier.title}</div>
-                <div className="text-[10px] text-[rgb(var(--muted))]">{tier.sub}</div>
+                <div className="text-sm font-semibold text-white/90">{tier.title}</div>
+                <div className="text-[10px] text-white/55">{tier.sub}</div>
               </div>
               <div>
-                <p className="text-xs leading-relaxed text-[rgb(var(--muted))] mb-3">{tier.desc}</p>
+                <p className="text-xs leading-relaxed text-white/55 mb-3">{tier.desc}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {tier.features.map(f => (
-                    <span key={f} className="text-[10px] px-2.5 py-1 rounded-full border border-[rgb(var(--border))]/50 text-[rgb(var(--muted))]">{f}</span>
+                    <span key={f} className="text-[10px] px-2.5 py-1 rounded-full border border-white/10/50 text-white/55">{f}</span>
                   ))}
                 </div>
               </div>
@@ -565,7 +565,7 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>The Executive Dashboard</SectionLabel>
         <SectionHeading>The intelligence dashboard</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Real-time visibility into how your organization thinks, learns, and decides.
         </p>
         <div className="mt-8"><ExecutiveDashboard /></div>
@@ -577,18 +577,18 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>What Admins Control</SectionLabel>
         <SectionHeading>Governance built in, not bolted on</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Policy, permissions, and auditability are first-class — not afterthoughts.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {ADMIN_CONTROLS.map(a => (
-            <div key={a.num} className="rounded-2xl border border-[rgb(var(--border))]/60 bg-white/[0.025] p-6 relative overflow-hidden">
+            <div key={a.num} className="rounded-2xl border border-white/10/60 bg-white/[0.07] p-6 relative overflow-hidden">
               <div className="absolute top-4 right-5 text-4xl font-bold select-none" style={{ color:"rgba(255,255,255,0.04)" }}>{a.num}</div>
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center text-base" style={{ background:`${a.color}14` }}>{a.icon}</div>
-                <div className="text-sm font-semibold text-[rgb(var(--text))]">{a.title}</div>
+                <div className="text-sm font-semibold text-white/90">{a.title}</div>
               </div>
-              <p className="text-xs leading-relaxed text-[rgb(var(--muted))]">{a.desc}</p>
+              <p className="text-xs leading-relaxed text-white/55">{a.desc}</p>
             </div>
           ))}
         </div>
@@ -600,16 +600,16 @@ export default function PlatformDeepDive() {
       <div className="mb-12">
         <SectionLabel>Enterprise Ready</SectionLabel>
         <SectionHeading>Governed deployment</SectionHeading>
-        <p className="mt-3 text-sm leading-relaxed text-[rgb(var(--muted))] max-w-2xl">
+        <p className="mt-3 text-sm leading-relaxed text-white/55 max-w-2xl">
           Enterprise requirements built into the architecture, not patched on top.
         </p>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {GOV_ITEMS.map(g => (
-            <div key={g.title} className="flex items-start gap-3 p-4 rounded-xl border border-[rgb(var(--border))]/50 bg-white/[0.02]">
+            <div key={g.title} className="flex items-start gap-3 p-4 rounded-xl border border-white/10/50 bg-white/[0.06]">
               <span className="w-5 h-5 rounded flex items-center justify-center text-xs font-bold shrink-0 mt-0.5" style={{ background:"rgba(34,197,94,0.1)",color:"#22c55e" }}>✓</span>
               <div>
-                <div className="text-sm font-semibold text-[rgb(var(--text))]">{g.title}</div>
-                <div className="text-xs text-[rgb(var(--muted))] mt-0.5">{g.desc}</div>
+                <div className="text-sm font-semibold text-white/90">{g.title}</div>
+                <div className="text-xs text-white/55 mt-0.5">{g.desc}</div>
               </div>
             </div>
           ))}
@@ -620,17 +620,17 @@ export default function PlatformDeepDive() {
 
       {/* 10 ── CTA ────────────────────────────────────────────────────────── */}
       <div className="rounded-2xl px-8 py-10 text-center" style={{ background:"rgba(59,130,246,0.04)",border:"1px solid rgba(59,130,246,0.15)" }}>
-        <h3 className="text-xl md:text-2xl font-semibold text-[rgb(var(--text))] mb-3 leading-snug">
+        <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-3 leading-snug">
           This isn&apos;t a chat window with a corporate skin.<br />
           <span style={{ color:"#3b82f6" }}>It&apos;s a managed intelligence platform.</span>
         </h3>
-        <p className="text-sm text-[rgb(var(--muted))] max-w-md mx-auto mb-6 leading-relaxed">
+        <p className="text-sm text-white/55 max-w-md mx-auto mb-6 leading-relaxed">
           Every person. Every role. Every decision. One intelligence layer that gets smarter every day.
         </p>
-        <a href="mailto:soob@aiunite.ai?subject=Platform Demo Request" className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold transition-opacity hover:opacity-85" style={{ background:"#3b82f6",color:"#fff" }}>
+        <a href="/contact?from=platform" className="inline-flex items-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold transition-opacity hover:opacity-85" style={{ background:"#3b82f6",color:"#fff" }}>
           Request a Platform Demo <span>→</span>
         </a>
-        <p className="text-xs text-[rgb(var(--muted))] mt-4">Available for enterprise and SMB deployments</p>
+        <p className="text-xs text-white/55 mt-4">Available for enterprise and SMB deployments</p>
       </div>
 
     </div>
